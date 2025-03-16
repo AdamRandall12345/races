@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<race>
+    <name>Metalborn</name>
+    <description>Guardians of the Jade Plains, with skin that gleams like polished metal and eyes radiating an otherworldly light.</description>
+    <appearance>
+        <form>Resemble humanoid beings with skin that appears to be made of polished metal. The texture and color vary depending on their "metal type."</form>
+        <metalTypes>
+            <copper>Copper Metalborn have warm, reddish-brown skin that glows faintly. They often have intricate copper-colored hair and eyes that shift between shades of green and blue.</copper>
+            <gold>Gold Metalborn have skin that shines with a golden luster. They typically have flowing, golden hair and piercing golden eyes.</gold>
+            <iron>Iron Metalborn have a tough, gray-black skin that is resistant to damage. They often have short, dark hair and piercing black eyes.</iron>
+            <platinum>Platinum Metalborn have skin that is smooth and silvery-white. They often have silvery-white hair and eyes that seem to reflect the light.</platinum>
+        </metalTypes>
+        <size>Medium</size>
+        <speed>30 feet</speed>
+        <lifespan>500-1000 years</lifespan>
+    </appearance>
+    <origins>
+        <legend>Legend tells of a catastrophic event in the distant past – a meteor shower that rained down upon Edan. Within these meteors, celestial beings of pure metallic essence were trapped. Upon impact, these beings were forged into the very fabric of the world, giving rise to the Metalborn.</legend>
+    </origins>
+    <society>
+        <livingArrangements>Metalborn typically live in small, close-knit communities, often located near sources of valuable metals. They may inhabit fortified settlements in the Iron Peaks or hidden caverns rich in minerals.</livingArrangements>
+        <values>Metalborn tend to be pragmatic and logical, valuing strength, resilience, and order. They prioritize duty, honor, and the protection of their people and their home.</values>
+    </society>
+    <racialTraits>
+        <trait>Metalborn Resilience: Resistance to bludgeoning, piercing, and slashing damage from non-magical weapons.</trait>
+        <trait>Metallic Form: As an action, the Metalborn can temporarily harden their skin, increasing their AC by 1 for 1 minute.</trait>
+        <trait>Metallic Touch: The Metalborn can use their hands to manipulate metal objects as if they were using tools.</trait>
+    </racialTraits>
+    <languages>
+        <language>Common</language>
+        <language>One other language of their choice.</language>
+    </languages>
+    <subraces>
+        <subrace>
+            <name>Copper Metalborn</name>
+            <traits>
+                <trait>Conductivity: Copper Metalborn can conduct electricity.</trait>
+                <trait>Natural Weapon: Their fists can be used as improvised bludgeoning weapons that deal 1d4 bludgeoning damage.</trait>
+            </traits>
+        </subrace>
+        <subrace>
+            <name>Gold Metalborn</name>
+            <traits>
+                <trait>Radiant Aura: The Gold Metalborn can emit a soft, radiant glow that provides dim light in a 10-foot radius.</trait>
+                <trait>Charismatic Presence: Gold Metalborn have advantage on Charisma (Persuasion) checks.</trait>
+            </traits>
+        </subrace>
+        <subrace>
+            <name>Iron Metalborn</name>
+            <traits>
+                <trait>Iron Will: Advantage on Constitution saving throws.</trait>
+                <trait>Unbreakable Resolve: Once per long rest, the Iron Metalborn can ignore the effects of one attack that would otherwise reduce them to 0 hit points. They still fall unconscious, but they have 1 hit point.</trait>
+            </traits>
+        </subrace>
+        <subrace>
+            <name>Platinum Metalborn</name>
+            <traits>
+                <trait>Ethereal Form: As a bonus action, the Platinum Metalborn can become partially ethereal for 1 round. While ethereal, they are immune to nonmagical attacks and difficult to perceive.</trait>
+                <trait>Psychic Resistance: Advantage on saving throws against psychic damage.</trait>
+            </traits>
+        </subrace>
+    </subraces>
+</race>
