@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<race>
+    <name>Kyubi</name>
+    <description>A cunning and agile people, deeply connected to the sea and the rhythm of the tides, known for their trickery, mysticism, and nomadic lifestyle.</description>
+    <appearance>
+        <form>Humanoid foxes with nine distinct tails. Tails covered in fur that varies in color based on environment. They walk upright on two legs, front paws resembling human hands.</form>
+        <size>Medium</size>
+        <speed>30 feet</speed>
+        <lifespan>Long-lived, often exceeding 150 years.</lifespan>
+    </appearance>
+    <racialTraits>
+        <trait>Cunning Action: As a bonus action on each of your turns, you can take the Dash, Disengage, or Hide action.</trait>
+        <trait>Fox's Cunning: You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks.</trait>
+        <trait>Nine-Tails: As a bonus action, you can expend a number of hit dice (up to a maximum equal to your Constitution modifier) to regain hit points. You must finish a short or long rest before you can use this trait again.</trait>
+    </racialTraits>
+    <tailManeuvers>
+        <maneuver>Trip: As a bonus action, you can make a Dexterity (Acrobatics) check contested by the target's Strength (Athletics) check. On a success, the target is knocked prone.</maneuver>
+        <maneuver>Distract: As a bonus action, you can create a flurry of distracting movements with your tails, forcing enemies within 5 feet of you to make a Wisdom saving throw or be disadvantaged on their next attack roll.</maneuver>
+        <maneuver>Balance: While moving, you can use your tails to maintain balance on difficult terrain, granting you advantage on Dexterity (Acrobatics) checks to maintain your balance.</maneuver>
+    </tailManeuvers>
+    <languages>
+        <language>Common</language>
+        <language>Sylvan</language>
+        <language>Thieves' Cant</language>
+    </languages>
+    <roleplayingNotes>
+        <note>Playful and Mischievous: Nine-tailed Foxes are known for their playful and mischievous nature.</note>
+        <note>Independent Spirits: They value their freedom and independence above all else.</note>
+        <note>Skilled Hunters: They are skilled hunters and survivalists.</note>
+        <note>Social: Despite their independent nature, Nine-tailed Foxes can form strong bonds within their clans.</note>
+    </roleplayingNotes>
+</race>
