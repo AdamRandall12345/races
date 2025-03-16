@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Bri's Races</name>
+		<description> Bri's Races.</description>
+		<update version="0.1.0">
+			<file name="Bri's Races.index" url="" />
+		</update>
+	</info>
+  
+  <files>
+  
+  <file name="Metalborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Metalborn.xml" />
+  <file name="Sporlings.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Sporlings.xml" />
+  <file name="gemborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/gemborn.xml" />
+  <file name="warden of the wild.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/warden%20of%20the%20wild.xml" />
+  <file name="kyubi.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/kyubi.xml" />
+  
+  </files>
+  
+  </index>
