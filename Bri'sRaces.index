@@ -4,7 +4,7 @@
         <name>Bri's Races</name>
         <description> Bri's Races.</description>
         <update version="0.1.0">
-            <file name="Bri's Races.index" url="https://github.com/AdamRandall12345/races/blob/main/Bri's%20races.index" />
+            <file name="Bri's Races.index" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Bri'sRaces.index" />
         </update>
     </info>
   
