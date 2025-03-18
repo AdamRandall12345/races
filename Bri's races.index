@@ -1,51 +1,20 @@
+
+XML
 <?xml version="1.0" encoding="utf-8"?>
-class Index:
-    def __init__(self, name, description, version):
-        self.name = name
-        self.description = description
-        self.version = version
-        self.files = []
-
-    def add_file(self, name, url):
-        self.files.append({"name": name, "url": url})
-
-    def get_files(self):
-        return self.files
-
-    def update_version(self, version):
-        self.version = version
-
-    def __str__(self):
-        return f"Index: {self.name}\nDescription: {self.description}\nVersion: {self.version}\nFiles: {len(self.files)}"
-
-
-class File:
-    def __init__(self, name, url):
-        self.name = name
-        self.url = url
-
-    def __str__(self):
-        return f"File: {self.name}\nURL: {self.url}"
-
-
-def main():
-    # Create an index object
-    index = Index("Bri's Races", "Bri's Races.", "0.1.0")
-
-    # Add files to the index
-    index.add_file("Metalborn.xml", "https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Metalborn.xml")
-    index.add_file("Sporlings.xml", "https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Sporlings.xml")
-    index.add_file("gemborn.xml", "https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/gemborn.xml")
-    index.add_file("warden of the wild.xml", "https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/warden%20of%20the%20wild.xml")
-    index.add_file("kyubi.xml", "https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/kyubi.xml")
-
-    # Print the index information
-    print(index)
-
-    # Print the files in the index
-    for file in index.get_files():
-        print(File(file["name"], file["url"]))
-
-
-if __name__ == "__main__":
-    main()
+<index>
+    <info>
+        <name>Bri's Races</name>
+        <description> Bri's Races.</description>
+        <update version="0.1.0">
+            <file name="Bri's Races.index" url="https://github.com/AdamRandall12345/races/blob/main/Bri's%20races.index" />
+        </update>
+    </info>
+  
+    <files>
+        <file name="Metalborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Metalborn.xml" />
+        <file name="Sporlings.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Sporlings.xml" />
+        <file name="gemborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/gemborn.xml" />
+        <file name="warden of the wild.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/warden%20of%20the%20wild.xml" />
+        <file name="kyubi.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/kyubi.xml" />
+    </files>
+</index>
