@@ -1,48 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<race name="Sporlings">
-    <description>Creatures of the undergrowth, born from the mycelial network that binds the forest together.</description>
-    <traits>
-        <trait name="Fungal Fortitude">
-            <description>Advantage on saving throws against poison and disease.</description>
-        </trait>
-        <trait name="Nature's Embrace">
-            <description>Proficient in the Nature skill.</description>
-        </trait>
-        <trait name="Spore Cloud">
-            <description>As an action, you can release a cloud of non-magical spores in a 15-foot radius. Creatures in the area must succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become poisoned for 1 minute. This ability recharges after a short or long rest.</description>
-        </trait>
-        <trait name="Symbiotic Connection">
-            <description>You have advantage on Wisdom (Survival) checks to find food and water in natural environments.</description>
-        </trait>
-        <trait name="Mycelial Rest">
-            <description>Instead of sleeping, Sporlings connect to the mycelium network to rejuvenate. This process takes 1 hour for a short rest and 2 hours for a long rest.</description>
-        </trait>
-    </traits>
-    <physicalDescription>
-        <appearance>Resemble humanoid mushrooms with varying degrees of sentience. Colors range from vibrant greens and browns to more subdued grays and whites.</appearance>
-        <size>Typically smaller than humans, comparable to halflings or gnomes.</size>
-        <speed>25 feet</speed>
-        <height>3'6" to 4'6"</height>
-        <weight>40-60 lbs</weight>
-        <lifespan>150-200 years</lifespan>
-    </physicalDescription>
-    <languages>
-        <language>Common</language>
-        <language>Sylvan</language>
-        <language>Mycelian</language>
-    </languages>
-    <equipment>
-        <item>Spore Pouch: A small pouch containing dried spores that can be used to create a distracting cloud or to enhance natural camouflage.</item>
-    </equipment>
-    <suggestedBackgrounds>
-        <background>Hermit: Many Sporelings live solitary lives, cultivating their own patches of mushrooms.</background>
-        <background>Outlander: Some Sporelings are wanderers, exploring the natural world and forging connections with other creatures.</background>
-        <background>Folk Hero: Sporelings who champion the rights of nature and protect the environment.</background>
-    </suggestedBackgrounds>
-    <roleplayingNotes>
-        <note>Sporelings are a young race, still developing their own culture and society.</note>
-        <note>They have a deep connection to nature and often feel a kinship with plants and animals.</note>
-        <note>Many Sporelings are wary of other races, especially those who hunt or consume mushrooms.</note>
-        <note>Some Sporlings may have unique abilities based on the type of mushroom they originated from, such as the ability to produce glowing spores or create illusions.</note>
-    </roleplayingNotes>
-</race>
+<elements>
+<info>
+<name>Gemborn</name>
+<update version="0.1.0">
+<file name="race-gemborn.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-gemborn.xml"/>
+</update>
+</info>
+<element name="Gemborn" type="Race" source="Player’s Handbook" id="ID_RACE_GEMBORN">
+<description>
+<p class="flavor">Gemborn are beings of pure crystal, possessing unique abilities and a deep connection to magic. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
+<h4>GEMBORN PHYSICAL DESCRIPTION</h4>
+<p>Gemborn resemble humanoid beings composed of crystalline structures, with appearance varying greatly depending on the type of crystal. They are typically Medium in size, with a height ranging from 6'0" to 7'0" and a weight between 150-200 lbs. Gemborn have a lifespan of 500-1000 years.</p>
+<h4>LANGUAGES</h4>
+<p>Gemborn know Common, Crystallian, and one extra language of their choice.</p>
+</description>
+<sheet display="false"/>
+<setters>
+<set name="height" modifier="2d8">6'0" to 7'0"</set>
+<set name="weight" modifier="2d4">150-200 lb.</set>
+</setters>
+<rules>
+<stat name="intelligence" value="2"/>
+<stat name="wisdom" value="1"/>
+<stat name="strength" value="0"/>
+<stat name="constitution" value="0"/>
+<grant type="Size" id="ID_SIZE_MEDIUM"/>
+<grant type="Language" id="ID_LANGUAGE_COMMON"/>
+<grant type="Language" id="ID_LANGUAGE_CRYSTALLIAN"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_HEART"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_ARMOR"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EARTHEN_REST"/>
+<select type="Sub Race" name="Gemborn Subrace" supports="Gemborn" optional="true"/>
+</rules>
+</element>
+<element name="Crystal Heart" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CRYSTAL_HEART">
+<description>
+<p>Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
+</description>
+<sheet>
+<description>Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Crystal Clarity" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY">
+<description>
+<p>Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols.</p>
+</description>
+<sheet>
+<description>Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Natural Armor" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_NATURAL_ARMOR">
+<description>
+<p>Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.</p>
+</description>
+<sheet>
+<description>Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Earthen Rest" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EARTHEN_REST">
+<description>
+<p>Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2 hours for a short rest and 4 hours for a long rest.</p>
+</description>
+<sheet>
+<description>Gemborn ground themselves by burying their feet in the earth.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Amethyst Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_AMETHYST_GEMBORN">
+<description>
+<p>Amethyst Gemborn are beings of ethereal amethyst, their skin shimmering with an otherworldly glow. They possess unique abilities such as Psychic Sensitivity and Dream Weaver.</p>
+</description>
+<sheet display="false"/>
+<setters>
+<set name="ability score increase" type="intelligence">2</set>
+<set name="ability score increase" type="wisdom">1</set>
+<set name="AC">2</set>
+<set name="alignment">Neutral or Chaotic</set>
+</setters>
+<rules>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PSYCHIC_SENSITIVITY"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DREAM_WEAVER"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PHASEWALK"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MIND_SHIELD"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARCANE_INTUITION"/>
+</rules>
+</element>
+<element name="Diamond Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_DIAMOND_GEMBORN">
+<description>
+<p>Diamond Gemborn are clad in crystalline armor, exuding an aura of authority and command. They possess unique abilities such as Adamantine Resilience and Inner Light.</p>
+</description>
+<sheet display="false"/>
+<setters>
+<set name="ability score increase" type="strength">2</set>
+<set name="ability score increase" type="constitution">1</set>
+<set name="AC">3</set>
+<set name="alignment">Lawful</set>
+</setters>
+<rules>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ADAMANTINE_RESILIENCE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_INNER_LIGHT"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FLAWLESS_FOCUS"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_AURA"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHATTERING_STRIKE"/>
+</rules>
+</element>
+<element name="Emerald Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_EMERALD_GEMBORN">
+<description>
+<p>Emerald Gemborn embody the life force of nature, possessing unique abilities such as Nature's Whisperer and Emerald Touch.</p>
+</description>
+<sheet display="false"/>
+<setters>
+<set name="ability score increase" type="wisdom">2</set>
+<set name="ability score increase" type="constitution">1</set>
+<set name="AC">1</set>
+<set name="alignment">Neutral</set>
+</setters>
+<rules>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURES_WHISPERER"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_TOUCH"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FOREST_AFFINITY"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RENEWING_TOUCH"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ONE_WITH_NATURE"/>
+</rules>
+</element>
+<element name="Sapphire Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_SAPPHIRE_GEMBORN">
+<description>
+<p>Sapphire Gemborn are calm and collected, possessing unique abilities such as Ocean's Embrace and Voice of Calm.</p>
+</description>
+<sheet display="false"/>
+<setters>
+<set name="ability score increase" type="intelligence">1</set>
+<set name="ability score increase" type="charisma">2</set>
+<set name="AC">2</set>
+<set name="alignment">Neutral Good</set>
+</setters>
+<rules>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_OCEANS_EMBRACE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_VOICE_OF_CALM"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_TELEPATHIC_COMMUNICATION"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SERENE_MIND"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FLOWING_MOTION"/>
+</rules>
+</element>
+<element name="Ruby Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_RUBY_GEMBORN">
+<description>
+<p>Ruby Gemborn possess a fiery spirit, with unique abilities such as Burning Heart and Ruby Flare.</p>
+</description>
+<sheet display="false"/>
+<setters>
+<set name="ability score increase" type="strength">1</set>
+<set name="ability score increase" type="constitution">2</set>
+<set name="AC">2</set>
+<set name="alignment">Varies</set>
+</setters>
+<rules>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BURNING_HEART"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_FLARE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_IMPOSING_PRESENCE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RAGE"/>
+</rules>
+</element>
+<element name="Rose Quartz Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_ROSE_QUARTZ_GEMBORN">
+<description>
+<p>Rose Quartz Gemborn radiate warmth and compassion, with unique abilities such as Empathic Sense and Soothing Presence.</p>
+</description>
+<sheet display="false"/>
+<setters>
+<set name="ability score increase" type="charisma">2</set>
+<set name="ability score increase" type="wisdom">1</set>
+<set name="AC">1</set>
+<set name="alignment">Good</set>
+</setters>
+<rules>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMPATHIC_SENSE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SOOTHING_PRESENCE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AURA_OF_TRANQUILITY"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEALING_HANDS"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
+</rules>
+</element>
+</elements>
