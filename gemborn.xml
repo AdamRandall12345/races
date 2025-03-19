@@ -200,22 +200,48 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 </element>
 <element>
 <element name="Rose Quartz Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_ROSE_QUARTZ_GEMBORN">
-<description>
-<p>Rose Quartz Gemborn radiate warmth and compassion, with unique abilities such as Empathic Sense and Soothing Presence.</p>
-</description>
-<sheet display="false"/>
-</element>
-<setters>
-<set name="ability score increase" type="charisma">2</set>
-<set name="ability score increase" type="wisdom">1</set>
-<set name="AC">1</set>
-<set name="alignment">Good</set>
-</setters>
-<rules>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMPATHIC_SENSE"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SOOTHING_PRESENCE"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AURA_OF_TRANQUILITY"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEALING_HANDS"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
-</rules>
+    <description>
+      <p>Rose Quartz Gemborn radiate warmth and compassion, with unique abilities such as Empathic Sense and Soothing Presence.</p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="ability score increase" type="charisma">2</set>
+      <set name="ability score increase" type="wisdom">1</set>
+      <set name="AC">1</set>
+      <set name="alignment">Good</set>
+    </setters>
+    <rules>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMPATHIC_SENSE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SOOTHING_PRESENCE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AURA_OF_TRANQUILITY"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEALING_HANDS"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
+    </rules>
+  </element>
+  <!-- Missing closing tag for an element here -->
+</elements>
+To fix this, ensure all <element> tags are properly closed:
+
+XML
+<elements>
+  ...
+  <element name="Rose Quartz Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_ROSE_QUARTZ_GEMBORN">
+    <description>
+      <p>Rose Quartz Gemborn radiate warmth and compassion, with unique abilities such as Empathic Sense and Soothing Presence.</p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="ability score increase" type="charisma">2</set>
+      <set name="ability score increase" type="wisdom">1</set>
+      <set name="AC">1</set>
+      <set name="alignment">Good</set>
+    </setters>
+    <rules>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMPATHIC_SENSE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SOOTHING_PRESENCE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AURA_OF_TRANQUILITY"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEALING_HANDS"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
+    </rules>
+  </element>
 </elements>
