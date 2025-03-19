@@ -30,4 +30,49 @@
             <levelAbilities>
                 <ability level="3">Burning Aura: Resistance to fire damage. Fiery Burst: Bonus action, unleash fiery burst, dealing fire damage to creatures within 5 feet.</ability>
                 <ability level="5">Ignite: Cast Produce Flame cantrip at will.</ability>
-                <ability level="7">Burning Hands:
+                <ability level="7">Burning Hands: Cast Burning Hands 1/long rest.</ability>
+                <ability level="9">Flame Blade: Cast Flame Blade 1/long rest.</ability>
+            </levelAbilities>
+        </subclass>
+        <subclass name="Water Warden">
+            <description>Adaptable and fluid, these wardens embody the ever-changing nature of water.</description>
+            <levelAbilities>
+                <ability level="3">Fluid Form: Resistance to cold damage, swimming speed = walking speed. Water Breathing: Breathe underwater indefinitely.</ability>
+                <ability level="5">Shape Water: Cast Shape Water cantrip at will.</ability>
+                <ability level="7">Water Whip: Create a whip of water, dealing cold damage.</ability>
+                <ability level="9">Water Walk: Cast Water Walk 1/long rest.</ability>
+            </levelAbilities>
+        </subclass>
+        <subclass name="Air Warden">
+            <description>Free-spirited and swift, these wardens embody the untamed power of the wind.</description>
+            <levelAbilities>
+                <ability level="3">Wind's Embrace: Flying speed = walking speed. Gust of Wind: Bonus action, create gust, push creatures/objects away.</ability>
+                <ability level="5">Zephyr's Shield: Reaction, create a shield of air, +2 to AC against one ranged attack.</ability>
+                <ability level="7">Feather Fall: Cast Feather Fall 1/long rest.</ability>
+                <ability level="9">Call Lightning: Cast Call Lightning 1/long rest.</ability>
+            </levelAbilities>
+        </subclass>
+    </subclasses>
+    <levelProgression>
+        <level number="1" proficiency="+2">Wild Shape Beast Of The Land land creatures only small size</level>
+        <level number="2" proficiency="+2">Natures Guidance Advantage on Wisdom (Survival) and Wisdom (Animal Handling) checks.</level>
+        <level number="3" proficiency="+2">elemental attunement</level>
+        <level number="4" proficiency="+2">as improvement 2pt in 1 score or 1pt in 2 scores or feat</level>
+        <level number="5" proficiency="+3">-</level>
+        <level number="6" proficiency="+3">Elemental Harmony: Gain proficiency in Nature skill or Survival skill</level>
+        <level number="7" proficiency="+3">Elemental Sense: Gain advantage on Wisdom (Perception) checks to notice environmental changes or hidden creatures.</level>
+        <level number="8" proficiency="+3">as improvement 2pt in 1 score or 1pt in 2 scores or feat</level>
+        <level number="9" proficiency="+4">-</level>
+        <level number="10" proficiency="+4">Wild Shape Improvment Beasts of The Sea swiming and mediam creatures</level>
+        <level number="11" proficiency="+4">Elemental Focus: Choose one element. When you use an action to cast a spell of your chosen element type, you can use a bonus action to gain advantage on the spell's attack roll or saving throw.</level>
+        <level number="12" proficiency="+4">as improvment 2pt in 1 score or 1pt in 2 scores or feat</level>
+        <level number="13" proficiency="+5">-</level>
+        <level number="14" proficiency="+5">Elemental Defense: When you take damage from a source of your chosen element type, you can use your reaction to reduce that damage by an amount equal to your Wisdom modifier.</level>
+        <level number="15" proficiency="+5">-</level>
+        <level number="16" proficiency="+5">as improvment 2pt in 1 score or 1pt in 2 scores or feat</level>
+        <level number="17" proficiency="+6">-</level>
+        <level number="18" proficiency="+6">Wild Shape Improvment Beasts of The Sky flying and larg creatures</level>
+        <level number="19" proficiency="+6">-</level>
+        <level number="20" proficiency="+6">as improvment 2pt in 1 score or 1pt in 2 scores or feat</level>
+    </levelProgression>
+</class>
