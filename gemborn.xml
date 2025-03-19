@@ -204,6 +204,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <p>Rose Quartz Gemborn radiate warmth and compassion, with unique abilities such as Empathic Sense and Soothing Presence.</p>
 </description>
 <sheet display="false"/>
+</element>
 <setters>
 <set name="ability score increase" type="charisma">2</set>
 <set name="ability score increase" type="wisdom">1</set>
@@ -217,5 +218,4 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEALING_HANDS"/>
 <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
 </rules>
-</element>
 </elements>
