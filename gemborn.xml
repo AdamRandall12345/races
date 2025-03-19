@@ -13,6 +13,13 @@
 <p>Gemborn resemble humanoid beings composed of crystalline structures, with appearance varying greatly depending on the type of crystal. They are typically Medium in size, with a height ranging from 6'0" to 7'0" and a weight between 150-200 lbs. Gemborn have a lifespan of 500-1000 years.</p>
 <h4>LANGUAGES</h4>
 <p>Gemborn know Common, Crystallian, and one extra language of their choice.</p>
+<h4>Gemborn Traits</h4>
+<p>Crystal Heart: Gemborn have advantage on Constitution saving throws against being poisoned or petrified.
+Crystal Clarity: Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols.
+Natural Armor: Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.
+Earthen Rest: Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2hours for a short rest and 4 hours for a long rest.
+Crystal Shard: A sharp fragment of crystal that can be used as a makeshift weapon or tool.
+Pouch of Crystal Dust: A small pouch containing powdered crystal that can be used for various purposes, such as creating a blinding flash or repairing minor damage to their crystalline form.</p>
 </description>
 <sheet display="false"/>
 <setters>
