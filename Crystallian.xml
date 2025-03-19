@@ -1,0 +1,11 @@
+<element name="Crystallian" type="Language" source="Homebrew" id="ID_LANGUAGE_Crystallian">
+<supports>Standard</supports>
+<description>
+<p>Typically spoken by Gemborn.</p>
+</description>
+<setters>
+<set name="standard">true</set>
+<set name="speakers">Gemborn</set>
+<set name="script">Crystallian</set>
+</setters>
+</element>
