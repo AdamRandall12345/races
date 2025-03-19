@@ -1,48 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<race name="Sporlings">
-    <description>Creatures of the undergrowth, born from the mycelial network that binds the forest together.</description>
-    <traits>
-        <trait name="Fungal Fortitude">
-            <description>Advantage on saving throws against poison and disease.</description>
-        </trait>
-        <trait name="Nature's Embrace">
-            <description>Proficient in the Nature skill.</description>
-        </trait>
-        <trait name="Spore Cloud">
-            <description>As an action, you can release a cloud of non-magical spores in a 15-foot radius. Creatures in the area must succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become poisoned for 1 minute. This ability recharges after a short or long rest.</description>
-        </trait>
-        <trait name="Symbiotic Connection">
-            <description>You have advantage on Wisdom (Survival) checks to find food and water in natural environments.</description>
-        </trait>
-        <trait name="Mycelial Rest">
-            <description>Instead of sleeping, Sporlings connect to the mycelium network to rejuvenate. This process takes 1 hour for a short rest and 2 hours for a long rest.</description>
-        </trait>
-    </traits>
-    <physicalDescription>
-        <appearance>Resemble humanoid mushrooms with varying degrees of sentience. Colors range from vibrant greens and browns to more subdued grays and whites.</appearance>
-        <size>Typically smaller than humans, comparable to halflings or gnomes.</size>
-        <speed>25 feet</speed>
-        <height>3'6" to 4'6"</height>
-        <weight>40-60 lbs</weight>
-        <lifespan>150-200 years</lifespan>
-    </physicalDescription>
-    <languages>
-        <language>Common</language>
-        <language>Sylvan</language>
-        <language>Mycelian</language>
-    </languages>
-    <equipment>
-        <item>Spore Pouch: A small pouch containing dried spores that can be used to create a distracting cloud or to enhance natural camouflage.</item>
-    </equipment>
-    <suggestedBackgrounds>
-        <background>Hermit: Many Sporelings live solitary lives, cultivating their own patches of mushrooms.</background>
-        <background>Outlander: Some Sporelings are wanderers, exploring the natural world and forging connections with other creatures.</background>
-        <background>Folk Hero: Sporelings who champion the rights of nature and protect the environment.</background>
-    </suggestedBackgrounds>
-    <roleplayingNotes>
-        <note>Sporelings are a young race, still developing their own culture and society.</note>
-        <note>They have a deep connection to nature and often feel a kinship with plants and animals.</note>
-        <note>Many Sporelings are wary of other races, especially those who hunt or consume mushrooms.</note>
-        <note>Some Sporlings may have unique abilities based on the type of mushroom they originated from, such as the ability to produce glowing spores or create illusions.</note>
-    </roleplayingNotes>
-</race>
+<elements>
+<info>
+<name>Sporlings</name>
+<update version="0.1.0">
+<file name="race-sporling.xml" url="https://example.com/race-sporling.xml"/>
+</update>
+</info>
+<element name="Sporlings" type="Race" source="Homebrew" id="ID_RACE_SPORLINGS">
+<description>
+<p class="flavor">The air hung heavy with the scent of damp earth and decaying leaves, a symphony of unseen life pulsating through the ancient forest. Xylar, a Sporeling with skin the color of moss and eyes like polished amber, moved with a silent grace, his bare feet barely touching the forest floor. He was a creature of the undergrowth, born from the mycelial network that bound the forest together.</p>
+<p>Xylar, like all Sporelings, possessed an innate connection to the natural world. He could communicate with the trees, understand the whispers of the wind, and sense the subtle shifts in the forest's energy. He moved through the undergrowth with an uncanny ease, his body seemingly one with the surrounding flora.</p>
+<p>But the tranquility of the forest was shattered by the arrival of a band of lumberjacks, their crude axes gleaming in the dappled sunlight. They hacked at the ancient trees, indifferent to the cries of the forest spirits. Xylar watched, his heart heavy with sorrow. He knew he could not stand idly by.</p>
+<p>With a silent flick of his wrist, Xylar released a cloud of shimmering spores. The spores, imbued with the essence of the forest, enveloped the lumberjacks, causing them to stumble and cough. He then summoned a swarm of iridescent beetles, their pincers snapping at the lumberjacks' exposed skin. The lumberjacks, bewildered and disoriented, retreated from the forest, leaving the ancient trees standing tall.</p>
+<p>Xylar watched them go, a sense of satisfaction washing over him. He had defended the forest, a testament to the resilience of the Sporeling and their deep connection to the natural world.</p>
+</description>
+<sheet display="false"/>
+<setters>
+<set name="height" modifier="2d8">3'6"</set>
+<set name="weight" modifier="2d4">50 lb.</set>
+<set name="languages" type="common">Common, Sylvan, Mycelian</set>
+<set name="spore pouch">A small pouch containing dried spores that can be used to create a distracting cloud or to enhance natural camouflage.</set>
+</setters>
+<rules>
+<stat name="speed" value="25"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FUNGAL_FORTITUDE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURES_EMBRACE"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SPORE_CLOUD"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SYMBIOTIC_CONNECTION"/>
+<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCELIAL_REST"/>
+</rules>
+</element>
+<element name="Fungal Fortitude" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_FUNGAL_FORTITUDE">
+<description>
+<p>You have advantage on saving throws against poison and disease.</p>
+</description>
+<sheet>
+<description>You have advantage on saving throws against poison and disease.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Nature's Embrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_NATURES_EMBRACE">
+<description>
+<p>You are proficient in the Nature skill.</p>
+</description>
+<sheet>
+<description>You are proficient in the Nature skill.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Spore Cloud" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SPORE_CLOUD">
+<description>
+<p>As an action, you can release a cloud of non-magical spores in a 15-foot radius. Creatures in the area must succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become poisoned for 1 minute. On a successful save, the target takes half as much damage. This ability recharges after a short or long rest.</p>
+</description>
+<sheet>
+<description>Release a cloud of non-magical spores that can disorient or harm enemies.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Symbiotic Connection" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SYMBIOTIC_CONNECTION">
+<description>
+<p>You have advantage on Wisdom (Survival) checks to find food and water in natural environments.</p>
+</description>
+<sheet>
+<description>You have advantage on Wisdom (Survival) checks to find food and water in natural environments.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Mycelial Rest" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_MYCELIAL_REST">
+<description>
+<p>Instead of sleeping, Sporlings connect to the mycelium network to rejuvenate. This process takes 1 hour for a short rest and 2 hours for a long rest.</p>
+</description>
+<sheet>
+<description>Connect to the mycelium network to rejuvenate.</description>
+</sheet>
+<rules/>
+</element>
+<element name="Sporling Subrace" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_SPORLING_SUBRACE"/>
+</elements>
