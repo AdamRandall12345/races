@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<race>
-    <name>Kyubi</name>
+<race name="Kyubi">
     <description>A cunning and agile people, deeply connected to the sea and the rhythm of the tides, known for their trickery, mysticism, and nomadic lifestyle.</description>
     <appearance>
         <form>Humanoid foxes with nine distinct tails. Tails covered in fur that varies in color based on environment. They walk upright on two legs, front paws resembling human hands.</form>
@@ -8,15 +7,27 @@
         <speed>30 feet</speed>
         <lifespan>Long-lived, often exceeding 150 years.</lifespan>
     </appearance>
-    <racialTraits>
-        <trait>Cunning Action: As a bonus action on each of your turns, you can take the Dash, Disengage, or Hide action.</trait>
-        <trait>Fox's Cunning: You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks.</trait>
-        <trait>Nine-Tails: As a bonus action, you can expend a number of hit dice (up to a maximum equal to your Constitution modifier) to regain hit points. You must finish a short or long rest before you can use this trait again.</trait>
-    </racialTraits>
+    <traits>
+        <trait name="Cunning Action">
+            <description>As a bonus action on each of your turns, you can take the Dash, Disengage, or Hide action.</description>
+        </trait>
+        <trait name="Fox's Cunning">
+            <description>You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks.</description>
+        </trait>
+        <trait name="Nine-Tails">
+            <description>As a bonus action, you can expend a number of hit dice (up to a maximum equal to your Constitution modifier) to regain hit points. You must finish a short or long rest before you can use this trait again.</description>
+        </trait>
+    </traits>
     <tailManeuvers>
-        <maneuver>Trip: As a bonus action, you can make a Dexterity (Acrobatics) check contested by the target's Strength (Athletics) check. On a success, the target is knocked prone.</maneuver>
-        <maneuver>Distract: As a bonus action, you can create a flurry of distracting movements with your tails, forcing enemies within 5 feet of you to make a Wisdom saving throw or be disadvantaged on their next attack roll.</maneuver>
-        <maneuver>Balance: While moving, you can use your tails to maintain balance on difficult terrain, granting you advantage on Dexterity (Acrobatics) checks to maintain your balance.</maneuver>
+        <maneuver name="Trip">
+            <description>As a bonus action, you can make a Dexterity (Acrobatics) check contested by the target's Strength (Athletics) check. On a success, the target is knocked prone.</description>
+        </maneuver>
+        <maneuver name="Distract">
+            <description>As a bonus action, you can create a flurry of distracting movements with your tails, forcing enemies within 5 feet of you to make a Wisdom saving throw or be disadvantaged on their next attack roll.</description>
+        </maneuver>
+        <maneuver name="Balance">
+            <description>While moving, you can use your tails to maintain balance on difficult terrain, granting you advantage on Dexterity (Acrobatics) checks to maintain your balance.</description>
+        </maneuver>
     </tailManeuvers>
     <languages>
         <language>Common</language>
