@@ -6,7 +6,7 @@
 <file name="race-gemborn.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-gemborn.xml"/>
 </update>
 </info>
-<element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
+<element name>="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
 <description>
 <p class="flavor">Gemborn are beings of pure crystal, possessing unique abilities and a deep connection to magic. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
 <h4>GEMBORN PHYSICAL DESCRIPTION</h4>
