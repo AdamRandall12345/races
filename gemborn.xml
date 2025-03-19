@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<elements>
 <info>
 <name>Gemborn</name>
 <update version="0.1.0">
@@ -218,4 +217,3 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
       <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
     </rules>
   </element>
-</elements>
