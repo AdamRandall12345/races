@@ -218,13 +218,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
       <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
     </rules>
   </element>
-  <!-- Missing closing tag for an element here -->
-</elements>
-To fix this, ensure all <element> tags are properly closed:
-
-XML
 <elements>
-  ...
   <element name="Rose Quartz Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_ROSE_QUARTZ_GEMBORN">
     <description>
       <p>Rose Quartz Gemborn radiate warmth and compassion, with unique abilities such as Empathic Sense and Soothing Presence.</p>
