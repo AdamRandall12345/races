@@ -6,7 +6,6 @@
 <file name="race-gemborn.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-gemborn.xml"/>
 </update>
 </info>
-<elements>
 <element>
 <element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
 <description>
@@ -219,5 +218,4 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
       <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
     </rules>
   </element>
-</elements>
 </root>
