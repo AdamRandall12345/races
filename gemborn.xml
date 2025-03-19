@@ -85,7 +85,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 </element>
 <element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_Gemborn_SUBRACE">
 <description>
-<p>Ancient divides among the elven people resulted in three main subraces: high elves, wood elves, and dark elves, who are commonly called drow. Choose one of these subraces. In some worlds, these subraces are divided still further (such as the sun elves and moon elves of the Forgotten Realms), so if you wish, you can choose a narrower subrace.</p>
+<p>Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges. Amethyst births the psychic, Diamond the strong, Emerald the natural, Sapphire the serene, Ruby the fiery, and Rose Quartz the compassionate. Essentially, the Gemborn are a living reflection of the earth's crystalline diversity.</p>
 </description>
 <sheet display="false"/>
 <rules>
