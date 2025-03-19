@@ -6,7 +6,7 @@
 <file name="race-gemborn.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-gemborn.xml"/>
 </update>
 </info>
-<element name="Gemborn" type="Race" source="Player’s Handbook" id="ID_RACE_GEMBORN">
+<element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
 <description>
 <p class="flavor">Gemborn are beings of pure crystal, possessing unique abilities and a deep connection to magic. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
 <h4>GEMBORN PHYSICAL DESCRIPTION</h4>
@@ -20,6 +20,12 @@ Natural Armor: Gemborn have an AC of 10 + their Dexterity modifier + their Const
 Earthen Rest: Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2hours for a short rest and 4 hours for a long rest.
 Crystal Shard: A sharp fragment of crystal that can be used as a makeshift weapon or tool.
 Pouch of Crystal Dust: A small pouch containing powdered crystal that can be used for various purposes, such as creating a blinding flash or repairing minor damage to their crystalline form.</p>
+<h4>Roleplaying Notes</h4>
+<p>Gemborn are a relatively young race, still discovering their place in the world. They may be viewed with curiosity, awe, or even fear by other races.
+Their crystalline nature can impact their social interactions. Some Gemborn might find it difficult to express emotions or form deep emotional connections, while others might be unusually sensitive to the emotions of others.
+Gemborn may have a unique perspective on the world, viewing it through the lens of their crystalline nature. They might be drawn to places of natural beauty, such as crystal caves, gem mines, or shimmering lakes.
+The different Gemborn variants might have distinct cultural and societal norms. For example, Diamond Gemborn might value strength and resilience, while Rose Quartz Gemborn might prioritize compassion and empathy.
+As a Gemborn, you are a unique and powerful being, capable of great things. Embrace your crystalline heritage, master your abilities, and discover your place in the world.</p>
 </description>
 <sheet display="false"/>
 <setters>
@@ -41,7 +47,7 @@ Pouch of Crystal Dust: A small pouch containing powdered crystal that can be use
 <select type="Sub Race" name="Gemborn Subrace" supports="Gemborn" optional="true"/>
 </rules>
 </element>
-<element name="Crystal Heart" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CRYSTAL_HEART">
+<element name="Crystal Heart" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_HEART">
 <description>
 <p>Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
 </description>
@@ -50,7 +56,7 @@ Pouch of Crystal Dust: A small pouch containing powdered crystal that can be use
 </sheet>
 <rules/>
 </element>
-<element name="Crystal Clarity" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY">
+<element name="Crystal Clarity" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY">
 <description>
 <p>Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols.</p>
 </description>
@@ -59,7 +65,7 @@ Pouch of Crystal Dust: A small pouch containing powdered crystal that can be use
 </sheet>
 <rules/>
 </element>
-<element name="Natural Armor" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_NATURAL_ARMOR">
+<element name="Natural Armor" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_NATURAL_ARMOR">
 <description>
 <p>Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.</p>
 </description>
@@ -68,7 +74,7 @@ Pouch of Crystal Dust: A small pouch containing powdered crystal that can be use
 </sheet>
 <rules/>
 </element>
-<element name="Earthen Rest" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EARTHEN_REST">
+<element name="Earthen Rest" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EARTHEN_REST">
 <description>
 <p>Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2 hours for a short rest and 4 hours for a long rest.</p>
 </description>
@@ -77,7 +83,16 @@ Pouch of Crystal Dust: A small pouch containing powdered crystal that can be use
 </sheet>
 <rules/>
 </element>
-<element name="Amethyst Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_AMETHYST_GEMBORN">
+<element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_Gemborn_SUBRACE">
+<description>
+<p>Ancient divides among the elven people resulted in three main subraces: high elves, wood elves, and dark elves, who are commonly called drow. Choose one of these subraces. In some worlds, these subraces are divided still further (such as the sun elves and moon elves of the Forgotten Realms), so if you wish, you can choose a narrower subrace.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<select type="Sub Race" name="Gemborn Subrace" supports="gemborn"/>
+</rules>
+</element>
+  <element name="Amethyst Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_AMETHYST_GEMBORN">
 <description>
 <p>Amethyst Gemborn are beings of ethereal amethyst, their skin shimmering with an otherworldly glow. They possess unique abilities such as Psychic Sensitivity and Dream Weaver.</p>
 </description>
@@ -96,7 +111,7 @@ Pouch of Crystal Dust: A small pouch containing powdered crystal that can be use
 <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARCANE_INTUITION"/>
 </rules>
 </element>
-<element name="Diamond Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_DIAMOND_GEMBORN">
+<element name="Diamond Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_DIAMOND_GEMBORN">
 <description>
 <p>Diamond Gemborn are clad in crystalline armor, exuding an aura of authority and command. They possess unique abilities such as Adamantine Resilience and Inner Light.</p>
 </description>
