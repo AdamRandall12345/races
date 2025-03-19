@@ -6,7 +6,8 @@
 <file name="race-gemborn.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-gemborn.xml"/>
 </update>
 </info>
-<element name>="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
+<element>
+<element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
 <description>
 <p class="flavor">Gemborn are beings of pure crystal, possessing unique abilities and a deep connection to magic. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
 <h4>GEMBORN PHYSICAL DESCRIPTION</h4>
@@ -47,6 +48,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <select type="Sub Race" name="Gemborn Subrace" supports="Gemborn" optional="true"/>
 </rules>
 </element>
+<element>
 <element name="Crystal Heart" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_HEART">
 <description>
 <p>Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
@@ -56,6 +58,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 </sheet>
 <rules/>
 </element>
+<element>
 <element name="Crystal Clarity" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY">
 <description>
 <p>Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols.</p>
@@ -65,6 +68,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 </sheet>
 <rules/>
 </element>
+<element>
 <element name="Natural Armor" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_NATURAL_ARMOR">
 <description>
 <p>Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.</p>
@@ -74,6 +78,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 </sheet>
 <rules/>
 </element>
+<element>
 <element name="Earthen Rest" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EARTHEN_REST">
 <description>
 <p>Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2 hours for a short rest and 4 hours for a long rest.</p>
@@ -83,6 +88,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 </sheet>
 <rules/>
 </element>
+<element>
 <element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_Gemborn_SUBRACE">
 <description>
 <p>Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges. Amethyst births the psychic, Diamond the strong, Emerald the natural, Sapphire the serene, Ruby the fiery, and Rose Quartz the compassionate. Essentially, the Gemborn are a living reflection of the earth's crystalline diversity.</p>
@@ -92,7 +98,8 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <select type="Sub Race" name="Gemborn Subrace" supports="gemborn"/>
 </rules>
 </element>
-  <element name="Amethyst Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_AMETHYST_GEMBORN">
+<element>
+<element name="Amethyst Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_AMETHYST_GEMBORN">
 <description>
 <p>Amethyst Gemborn are beings of ethereal amethyst, their skin shimmering with an otherworldly glow. They possess unique abilities such as Psychic Sensitivity and Dream Weaver.</p>
 </description>
@@ -111,6 +118,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARCANE_INTUITION"/>
 </rules>
 </element>
+<element>
 <element name="Diamond Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_DIAMOND_GEMBORN">
 <description>
 <p>Diamond Gemborn are clad in crystalline armor, exuding an aura of authority and command. They possess unique abilities such as Adamantine Resilience and Inner Light.</p>
@@ -130,6 +138,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHATTERING_STRIKE"/>
 </rules>
 </element>
+<element>
 <element name="Emerald Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_EMERALD_GEMBORN">
 <description>
 <p>Emerald Gemborn embody the life force of nature, possessing unique abilities such as Nature's Whisperer and Emerald Touch.</p>
@@ -149,6 +158,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ONE_WITH_NATURE"/>
 </rules>
 </element>
+<element>
 <element name="Sapphire Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_SAPPHIRE_GEMBORN">
 <description>
 <p>Sapphire Gemborn are calm and collected, possessing unique abilities such as Ocean's Embrace and Voice of Calm.</p>
@@ -168,6 +178,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FLOWING_MOTION"/>
 </rules>
 </element>
+<element>
 <element name="Ruby Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_RUBY_GEMBORN">
 <description>
 <p>Ruby Gemborn possess a fiery spirit, with unique abilities such as Burning Heart and Ruby Flare.</p>
@@ -187,6 +198,7 @@ As a Gemborn, you are a unique and powerful being, capable of great things. Embr
 <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RAGE"/>
 </rules>
 </element>
+<element>
 <element name="Rose Quartz Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_ROSE_QUARTZ_GEMBORN">
 <description>
 <p>Rose Quartz Gemborn radiate warmth and compassion, with unique abilities such as Empathic Sense and Soothing Presence.</p>
