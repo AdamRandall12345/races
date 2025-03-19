@@ -1,131 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<race>
-    <name>Gemborn</name>
-    <description>Beings of pure crystal, possessing unique abilities and a remarkable resistance to certain forms of harm.</description>
-    <keyFeatures>
-        <feature>Crystal Heart: Advantage on Constitution saving throws against being poisoned or petrified.</feature>
-        <feature>Crystal Clarity: Advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols.</feature>
-        <feature>Natural Armor: AC of 10 + Dexterity modifier + Constitution modifier.</feature>
-        <feature>Earthen Rest: Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. 2 hours for a short rest, 4 hours for a long rest.</feature>
-    </keyFeatures>
+<race name="Sporlings">
+    <description>Creatures of the undergrowth, born from the mycelial network that binds the forest together.</description>
+    <traits>
+        <trait name="Fungal Fortitude">
+            <description>Advantage on saving throws against poison and disease.</description>
+        </trait>
+        <trait name="Nature's Embrace">
+            <description>Proficient in the Nature skill.</description>
+        </trait>
+        <trait name="Spore Cloud">
+            <description>As an action, you can release a cloud of non-magical spores in a 15-foot radius. Creatures in the area must succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become poisoned for 1 minute. This ability recharges after a short or long rest.</description>
+        </trait>
+        <trait name="Symbiotic Connection">
+            <description>You have advantage on Wisdom (Survival) checks to find food and water in natural environments.</description>
+        </trait>
+        <trait name="Mycelial Rest">
+            <description>Instead of sleeping, Sporlings connect to the mycelium network to rejuvenate. This process takes 1 hour for a short rest and 2 hours for a long rest.</description>
+        </trait>
+    </traits>
     <physicalDescription>
-        <appearance>Resemble humanoid beings composed of crystalline structures. Appearance varies greatly depending on the type of crystal.</appearance>
-        <size>Medium</size>
-        <speed>30 feet</speed>
-        <height>6'0" to 7'0"</height>
-        <weight>150-200 lbs</weight>
-        <lifespan>500-1000 years</lifespan>
+        <appearance>Resemble humanoid mushrooms with varying degrees of sentience. Colors range from vibrant greens and browns to more subdued grays and whites.</appearance>
+        <size>Typically smaller than humans, comparable to halflings or gnomes.</size>
+        <speed>25 feet</speed>
+        <height>3'6" to 4'6"</height>
+        <weight>40-60 lbs</weight>
+        <lifespan>150-200 years</lifespan>
     </physicalDescription>
     <languages>
         <language>Common</language>
-        <language>Crystallian</language>
-        <language>One extra language of their choice</language>
+        <language>Sylvan</language>
+        <language>Mycelian</language>
     </languages>
     <equipment>
-        <item>Crystal Shard: A sharp fragment of crystal that can be used as a makeshift weapon or tool.</item>
-        <item>Pouch of Crystal Dust: A small pouch containing powdered crystal that can be used for various purposes.</item>
+        <item>Spore Pouch: A small pouch containing dried spores that can be used to create a distracting cloud or to enhance natural camouflage.</item>
     </equipment>
+    <suggestedBackgrounds>
+        <background>Hermit: Many Sporelings live solitary lives, cultivating their own patches of mushrooms.</background>
+        <background>Outlander: Some Sporelings are wanderers, exploring the natural world and forging connections with other creatures.</background>
+        <background>Folk Hero: Sporelings who champion the rights of nature and protect the environment.</background>
+    </suggestedBackgrounds>
     <roleplayingNotes>
-        <note>Gemborn are a relatively young race, still discovering their place in the world.</note>
-        <note>Their crystalline nature can impact their social interactions.</note>
-        <note>Gemborn may have a unique perspective on the world, viewing it through the lens of their crystalline nature.</note>
-        <note>The different Gemborn variants might have distinct cultural and societal norms.</note>
+        <note>Sporelings are a young race, still developing their own culture and society.</note>
+        <note>They have a deep connection to nature and often feel a kinship with plants and animals.</note>
+        <note>Many Sporelings are wary of other races, especially those who hunt or consume mushrooms.</note>
+        <note>Some Sporlings may have unique abilities based on the type of mushroom they originated from, such as the ability to produce glowing spores or create illusions.</note>
     </roleplayingNotes>
-    <subraces>
-        <subrace>
-            <name>Amethyst Gemborn</name>
-            <description>A being of ethereal amethyst, their skin shimmering with an otherworldly glow.</description>
-            <abilityScoreIncrease>Intelligence +2, Wisdom +1</abilityScoreIncrease>
-            <acBonus>+2</acBonus>
-            <alignment>Often Neutral or Chaotic</alignment>
-            <traits>
-                <trait>Psychic Sensitivity: Advantage on Wisdom (Insight) checks and saves against charm/frighten.</trait>
-                <trait>Dream Weaver: 1/long rest, trance for vision of future or distant location.</trait>
-                <trait>Phasewalk: 1/long rest, ethereal state, immune to nonmagical weapons for 1 round.</trait>
-                <trait>Mind Shield: Advantage on saving throws against being charmed or frightened once per short or long rest.</trait>
-                <trait>Arcane Intuition: Advantage on Intelligence (Arcana) checks to recall magic info.</trait>
-            </traits>
-            <cantrips>
-                <cantrip>Mage Hand</cantrip>
-                <cantrip>Dancing Lights</cantrip>
-            </cantrips>
-        </subrace>
-        <subrace>
-            <name>Diamond Gemborn</name>
-            <description>Clad in crystalline armor, their form is a testament to strength and resilience.</description>
-            <abilityScoreIncrease>Strength +2, Constitution +1</abilityScoreIncrease>
-            <acBonus>+3</acBonus>
-            <alignment>Tend toward Lawful alignments.</alignment>
-            <traits>
-                <trait>Adamantine Resilience: Resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</trait>
-                <trait>Inner Light: 1/long rest, emit bright light in a 15-foot radius for 1 minute, granting allies advantage on sight-based Perception checks.</trait>
-                <trait>Flawless Focus: Advantage on Concentration saving throws.</trait>
-                <trait>Diamond Aura: As a reaction when hit, the Gemborn can force the attacker to make a Dexterity saving throw or take 1d4 force damage.</trait>
-                <trait>Shattering Strike: Once per short or long rest, the Gemborn can deal an extra 1d6 force damage with a melee weapon attack.</trait>
-            </traits>
-            <cantrips>
-                <cantrip>Frostbite</cantrip>
-                <cantrip>Toll the Dead</cantrip>
-            </cantrips>
-        </subrace>
-        <subrace>
-            <name>Emerald Gemborn</name>
-            <description>With skin the color of fresh spring leaves, they embody the life force of nature.</description>
-            <abilityScoreIncrease>Wisdom +2, Constitution +1</abilityScoreIncrease>
-            <acBonus>+1</acBonus>
-            <alignment>Typically Neutral alignments.</alignment>
-            <traits>
-                <trait>Nature's Whisperer: Can cast "Speak with Plants" and "Druidcraft" each 1/long rest without using a spell slot.</trait>
-                <trait>Emerald Touch: The Gemborn can expend a hit die to heal a creature for a number of hit points equal to the number rolled on the die.</trait>
-                <trait>Forest Affinity: Advantage on saves against poison and resistance to poison damage.</trait>
-                <trait>Renewing Touch: Can expend a hit die to heal a plant or accelerate its growth.</trait>
-                <trait>One With Nature: Can attempt to hide even when only lightly obscured by natural phenomena.</trait>
-            </traits>
-            <cantrips>
-                <cantrip>Acid Splash</cantrip>
-                <cantrip>Thorn Whip</cantrip>
-            </cantrips>
-        </subrace>
-        <subrace>
-            <name>Sapphire Gemborn</name>
-            <description>Their skin shimmers with the deep hues of the ocean, reflecting their calm and collected demeanor.</description>
-            <abilityScoreIncrease>Intelligence +1, Charisma +2</abilityScoreIncrease>
-            <acBonus>+2</acBonus>
-            <alignment>Often lean toward Neutral Good.</alignment>
-            <traits>
-                <trait>Ocean's Embrace: Can hold breath twice as long and has a swimming speed of 30 feet.</trait>
-                <trait>Voice of Calm: Can expend a hit die to cast "Calm Emotions."</trait>
-                <trait>Telepathic Communication: Can communicate telepathically with creatures within 30 feet.</trait>
-                <trait>Serene Mind: Advantage on saves against being charmed or frightened.</trait>
-                <trait>Flowing Motion: Can move through the space of larger creatures.</trait>
-            </traits>
-            <cantrips>
-                <cantrip>Minor Illusion</cantrip>
-                <cantrip>Prestidigitation</cantrip>
-            </cantrips>
-        </subrace>
-        <subrace>
-            <name>Ruby Gemborn</name>
-            <description>A fiery spirit burns within them, their skin reflecting the fiery depths of a molten core.</description>
-            <abilityScoreIncrease>Strength +1, Constitution +2</abilityScoreIncrease>
-            <acBonus>+2</acBonus>
-            <alignment>Can vary, but often have a strong sense of justice.</alignment>
-            <traits>
-                <trait>Burning Heart: Resistance to fire damage.</trait>
-                <trait>Ruby Flare: Can expend a hit die to cast "Burning Hands."</trait>
-                <trait>Imposing Presence: Advantage on Charisma (Intimidation) checks.</trait>
-                <trait>Relentless Endurance: Can drop to 1 hit point instead of 0 once per long rest.</trait>
-                <trait>Fueled by Fury: Deals extra fire damage with melee attacks while raging.</trait>
-            </traits>
-            <rage>
-                <trigger>The Ruby Gemborn can enter a rage as a bonus action.</trigger>
-                <duration>The rage lasts for 1 minute. It ends early if the Gemborn is knocked unconscious or stabilized.</duration>
-                <benefits>While raging, the Ruby Gemborn has advantage on Strength checks and Strength saving throws. They also have resistance to bludgeoning, piercing, and slashing damage.</benefits>
-                <drawbacks>The Ruby Gemborn can't cast spells or concentrate on spells while raging.</drawbacks>
-            </rage>
-            <cantrips>
-                <cantrip>Fire Bolt</cantrip>
-            </cantrips>
-</subrace>
-</subraces>
 </race>
