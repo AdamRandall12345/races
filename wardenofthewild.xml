@@ -1,78 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class name="Warden of the Wild">
-    <description>Guardians of nature, attuned to the elemental forces that shape the world.</description>
-    <traits>
-        <trait name="Elemental Attunement">
-            <description>Choose an element (Earth, Fire, Water, or Air) and gain unique abilities and resistances.</description>
-        </trait>
-        <trait name="Wild Shape">
-            <description>Transform parts of your body into your chosen element, becoming more attuned to the natural world.</description>
-        </trait>
-        <trait name="Nature's Guidance">
-            <description>You have a deep connection to nature, granting you advantage on Wisdom (Survival) checks.</description>
-        </trait>
-        <trait name="Elemental Mastery">
-            <description>You gain the power to cast spells from the Druid spell list, harnessing the magic of the elements.</description>
-        </trait>
-    </traits>
-    <subclasses>
-        <subclass name="Earth Warden">
-            <description>Guardians of the deep earth, embodying resilience and steadfastness.</description>
-            <levelAbilities>
-                <ability level="3">Earthen Resilience: Resistance to bludgeoning damage. Earth Meld: Bonus action, meld into the earth, become invisible until end of next turn, advantage on Dexterity (Stealth) checks.</ability>
-                <ability level="5">Tremorsense: Sense vibrations in the ground within 30 feet, detect creatures/objects moving through solid earth.</ability>
-                <ability level="7">Stone's Embrace: When hit by an attack, use reaction to reduce damage by 1d8 + proficiency bonus.</ability>
-                <ability level="9">Stone Shape: Cast Stone Shape 1/long rest.</ability>
-            </levelAbilities>
-        </subclass>
-        <subclass name="Fire Warden">
-            <description>With spirits ablaze, these wardens command the destructive and purifying power of fire.</description>
-            <levelAbilities>
-                <ability level="3">Burning Aura: Resistance to fire damage. Fiery Burst: Bonus action, unleash fiery burst, dealing fire damage to creatures within 5 feet.</ability>
-                <ability level="5">Ignite: Cast Produce Flame cantrip at will.</ability>
-                <ability level="7">Burning Hands: Cast Burning Hands 1/long rest.</ability>
-                <ability level="9">Flame Blade: Cast Flame Blade 1/long rest.</ability>
-            </levelAbilities>
-        </subclass>
-        <subclass name="Water Warden">
-            <description>Adaptable and fluid, these wardens embody the ever-changing nature of water.</description>
-            <levelAbilities>
-                <ability level="3">Fluid Form: Resistance to cold damage, swimming speed = walking speed. Water Breathing: Breathe underwater indefinitely.</ability>
-                <ability level="5">Shape Water: Cast Shape Water cantrip at will.</ability>
-                <ability level="7">Water Whip: Create a whip of water, dealing cold damage.</ability>
-                <ability level="9">Water Walk: Cast Water Walk 1/long rest.</ability>
-            </levelAbilities>
-        </subclass>
-        <subclass name="Air Warden">
-            <description>Free-spirited and swift, these wardens embody the untamed power of the wind.</description>
-            <levelAbilities>
-                <ability level="3">Wind's Embrace: Flying speed = walking speed. Gust of Wind: Bonus action, create gust, push creatures/objects away.</ability>
-                <ability level="5">Zephyr's Shield: Reaction, create a shield of air, +2 to AC against one ranged attack.</ability>
-                <ability level="7">Feather Fall: Cast Feather Fall 1/long rest.</ability>
-                <ability level="9">Call Lightning: Cast Call Lightning 1/long rest.</ability>
-            </levelAbilities>
-        </subclass>
-    </subclasses>
-    <levelProgression>
-        <level number="1" proficiency="+2">Wild Shape Beast Of The Land land creatures only small size</level>
-        <level number="2" proficiency="+2">Natures Guidance Advantage on Wisdom (Survival) and Wisdom (Animal Handling) checks.</level>
-        <level number="3" proficiency="+2">elemental attunement</level>
-        <level number="4" proficiency="+2">as improvement 2pt in 1 score or 1pt in 2 scores or feat</level>
-        <level number="5" proficiency="+3">-</level>
-        <level number="6" proficiency="+3">Elemental Harmony: Gain proficiency in Nature skill or Survival skill</level>
-        <level number="7" proficiency="+3">Elemental Sense: Gain advantage on Wisdom (Perception) checks to notice environmental changes or hidden creatures.</level>
-        <level number="8" proficiency="+3">as improvement 2pt in 1 score or 1pt in 2 scores or feat</level>
-        <level number="9" proficiency="+4">-</level>
-        <level number="10" proficiency="+4">Wild Shape Improvment Beasts of The Sea swiming and mediam creatures</level>
-        <level number="11" proficiency="+4">Elemental Focus: Choose one element. When you use an action to cast a spell of your chosen element type, you can use a bonus action to gain advantage on the spell's attack roll or saving throw.</level>
-        <level number="12" proficiency="+4">as improvment 2pt in 1 score or 1pt in 2 scores or feat</level>
-        <level number="13" proficiency="+5">-</level>
-        <level number="14" proficiency="+5">Elemental Defense: When you take damage from a source of your chosen element type, you can use your reaction to reduce that damage by an amount equal to your Wisdom modifier.</level>
-        <level number="15" proficiency="+5">-</level>
-        <level number="16" proficiency="+5">as improvment 2pt in 1 score or 1pt in 2 scores or feat</level>
-        <level number="17" proficiency="+6">-</level>
-        <level number="18" proficiency="+6">Wild Shape Improvment Beasts of The Sky flying and larg creatures</level>
-        <level number="19" proficiency="+6">-</level>
-        <level number="20" proficiency="+6">as improvment 2pt in 1 score or 1pt in 2 scores or feat</level>
-    </levelProgression>
-</class>
+<elements>
+<info>
+<name>Warden of the Wild</name>
+<update version="0.1.0">
+<file name="class-warden-of-the-wild.xml" url="https://example.com/class-warden-of-the-wild.xml"/>
+</update>
+</info>
+<element name="Warden of the Wild" type="Class" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_WARDEN_OF_THE_WILD">
+<description>
+<p>The air crackled with energy, the scent of pine needles filling the air. Elara, a Warden of the Wild, stood atop a windswept cliff, her emerald green skin shimmering in the sunlight. As an Emerald Gemborn, she felt an innate connection to this land, a kinship with the whispering trees and the murmuring brook that snaked through the valley.</p>
+<p>Suddenly, a tremor shook the ground. Elara's eyes snapped open, her emerald skin shimmering with concern. A guttural roar echoed through the forest, followed by the frantic cries of animals. A monstrous creature, a grotesque amalgamation of rock and flesh, emerged from the depths of the woods, wreaking havoc upon the delicate ecosystem.</p>
+<p>Elara knew what she had to do. Drawing upon the life force of the forest, she channeled her power, her emerald skin glowing with an inner light. With a deep breath, she unleashed a torrent of vines, lashing out at the monstrous creature, binding its limbs and slowing its advance. As the creature roared in frustration, Elara called upon the spirits of the forest, summoning a flock of hawks to distract the beast while she prepared her next move.</p>
+<p>This is just a small glimpse into the life of a Warden of the Wild. These guardians of nature are attuned to the elemental forces that shape the world. They can manipulate the land, control the weather, and commune with the spirits of nature. They are masters of the environment, able to defend themselves and their allies with the power of the elements.</p>
+<h4>Key Features of the Warden of the Wild:</h4>
+<ul>
+<li>Elemental Attunement: Choose an element (Earth, Fire, Water, or Air) and gain unique abilities and resistances.</li>
+<li>Wild Shape: Transform parts of your body into your chosen element, becoming more attuned to the natural world.</li>
+<li>Nature's Guidance: You have a deep connection to nature, granting you advantage on Wisdom (Survival) checks.</li>
+<li>Elemental Mastery: You gain the power to cast spells from the Druid spell list, harnessing the magic of the elements.</li>
+</ul>
+<p>As a Warden of the Wild, you will become a champion of nature, a defender of the environment, and a master of the elemental forces that shape the world. Are you ready to embrace the power of the wild?</p>
+</description>
+<sheet display="false">
+<description>A champion of nature, a defender of the environment, and a master of the elemental forces.</description>
+</sheet>
+<setters>
+<set name="short">A champion of nature, a defender of the environment, and a master of the elemental forces.</set>
+<set name="hd">d8</set>
+</setters>
+<rules>
+<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_WARDEN_OF_THE_WILD"/>
+<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_WARDEN_OF_THE_WILD"/>
+<select type="Proficiency" name="Skill Proficiency (Warden of the Wild)" supports="Skill,Warden of the Wild" number="4" requirements="!ID_WOTC_PHB_MULTICLASS_WARDEN_OF_THE_WILD"/>
+</rules>
+<multiclass id="ID_WOTC_PHB_MULTICLASS_WARDEN_OF_THE_WILD">
+<prerequisite>Wisdom 13</prerequisite>
+<requirements>[wis:13]</requirements>
+<setters>
+<set name="multiclass proficiencies">Light armor, one skill from the class’s skill list</set>
+</setters>
+<rules>
+<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
+<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+<select type="Proficiency" name="Skill Proficiency (Warden of the Wild)" supports="Skill,Warden of the Wild" number="1"/>
+</rules>
+</multiclass>
+</element>
+<element name="Elemental Attunement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_WARDEN_OF_THE_WILD_ELEMENTAL_ATTUNEMENT">
+<description>
+<p>Choose an element (Earth, Fire, Water, or Air) and gain unique abilities and resistances.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<!-- Elemental Attunement rules go here -->
+</rules>
+</element>
+<element name="Wild Shape" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_WARDEN_OF_THE_WILD_WILD_SHAPE">
+<description>
+<p>Transform parts of your body into your chosen element, becoming more attuned to the natural world.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<!-- Wild Shape rules go here -->
+</rules>
+</element>
+<element name="Nature's Guidance" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_WARDEN_OF_THE_WILD_NATURES_GUIDANCE">
+<description>
+<p>You have a deep connection to nature, granting you advantage on Wisdom (Survival) checks.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<!-- Nature's Guidance rules go here -->
+</rules>
+</element>
+<element name="Elemental Mastery" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_WARDEN_OF_THE_WILD_ELEMENTAL_MASTERY">
+<description>
+<p>You gain the power to cast spells from the Druid spell list, harnessing the magic of the elements.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<!-- Elemental Mastery rules go here -->
+</rules>
+</element>
+<element name="Earth Warden" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_EARTH_WARDEN">
+<description>
+<p>Guardians of the deep earth, these wardens embody the resilience and steadfastness of the mountains. They are masters of stone and soil, wielding the power of the earth to defend the natural world.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EARTH_WARDEN_EARTHEN_RESILIENCE" level="3"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EARTH_WARDEN_EARTH_MELD" level="3"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EARTH_WARDEN_TREMORSENSE" level="5"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EARTH_WARDEN_STONES_EMBRACE" level="7"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EARTH_WARDEN_STONE_SHAPE" level="9"/>
+</rules>
+</element>
+<element name="Fire Warden" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FIRE_WARDEN">
+<description>
+<p>With spirits ablaze, these wardens command the destructive and purifying power of fire. They are fierce protectors, wielding flames to safeguard the wilds and consume those who threaten its balance.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_FIRE_WARDEN_BURNING_AURA" level="3"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_FIRE_WARDEN_FIERY_BURST" level="3"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_FIRE_WARDEN_IGNITE" level="5"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_FIRE_WARDEN_BURNING_HANDS" level="7"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_FIRE_WARDEN_FLAME_BLADE" level="9"/>
+</rules>
+</element>
+<element name="Water Warden" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_WATER_WARDEN">
+<description>
+<p>Adaptable and fluid, these wardens embody the ever-changing nature of water. They move with the currents, harnessing the power of the rivers and seas to defend the delicate ecosystems they call home.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WATER_WARDEN_FLUID_FORM" level="3"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WATER_WARDEN_WATER_BREATHING" level="3"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WATER_WARDEN_SHAPE_WATER" level="5"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WATER_WARDEN_WATER_WHIP" level="7"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WATER_WARDEN_WATER_WALK" level="9"/>
+</rules>
+</element>
+<element name="Air Warden" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_AIR_WARDEN">
+<description>
+<p>Free-spirited and swift, these wardens embody the untamed power of the wind. They soar through the skies, wielding the forces of the air to protect the wilds from those who would seek to harm it.</p>
+</description>
+<sheet display="false"/>
+<rules>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_AIR_WARDEN_WINDS_EMBRACE" level="3"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_AIR_WARDEN_GUST_OF_WIND" level="3"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_AIR_WARDEN_ZEPHYRS_SHIELD" level="5"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_AIR_WARDEN_FEATHER_FALL" level="7"/>
+<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_AIR_WARDEN_CALL_LIGHTNING" level="9"/>
+</rules>
+</element>
+</elements>
