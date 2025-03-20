@@ -1,205 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-<info>
-<name>Gemborn</name>
-<update version="0.1.0">
-<file name="race-gemborn.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-gemborn.xml"/>
-</update>
-</info>
-<element>
-<element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
-<description>
-<p class="flavor">Gemborn are beings of pure crystal, possessing unique abilities and a deep connection to magic. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
-<h4>GEMBORN PHYSICAL DESCRIPTION</h4>
-<p>Gemborn resemble humanoid beings composed of crystalline structures, with appearance varying greatly depending on the type of crystal. They are typically Medium in size, with a height ranging from 6'0" to 7'0" and a weight between 150-200 lbs. Gemborn have a lifespan of 500-1000 years.</p>
-<h4>LANGUAGES</h4>
-<p>Gemborn know Common, Crystallian, and one extra language of their choice.</p>
-<h4>Gemborn Traits</h4>
-<p>Crystal Heart: Gemborn have advantage on Constitution saving throws against being poisoned or petrified.
-Crystal Clarity: Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols.
-Natural Armor: Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.
-Earthen Rest: Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2hours for a short rest and 4 hours for a long rest.
-Crystal Shard: A sharp fragment of crystal that can be used as a makeshift weapon or tool.
-Pouch of Crystal Dust: A small pouch containing powdered crystal that can be used for various purposes, such as creating a blinding flash or repairing minor damage to their crystalline form.</p>
-<h4>Roleplaying Notes</h4>
-<p>Gemborn are a relatively young race, still discovering their place in the world. They may be viewed with curiosity, awe, or even fear by other races.
-Their crystalline nature can impact their social interactions. Some Gemborn might find it difficult to express emotions or form deep emotional connections, while others might be unusually sensitive to the emotions of others.
-Gemborn may have a unique perspective on the world, viewing it through the lens of their crystalline nature. They might be drawn to places of natural beauty, such as crystal caves, gem mines, or shimmering lakes.
-The different Gemborn variants might have distinct cultural and societal norms. For example, Diamond Gemborn might value strength and resilience, while Rose Quartz Gemborn might prioritize compassion and empathy.
-As a Gemborn, you are a unique and powerful being, capable of great things. Embrace your crystalline heritage, master your abilities, and discover your place in the world.</p>
-</description>
-<sheet display="false"/>
-<setters>
-<set name="height" modifier="2d8">6'0" to 7'0"</set>
-<set name="weight" modifier="2d4">150-200 lb.</set>
-</setters>
-<rules>
-<stat name="intelligence" value="2"/>
-<stat name="wisdom" value="1"/>
-<stat name="strength" value="0"/>
-<stat name="constitution" value="0"/>
-<grant type="Size" id="ID_SIZE_MEDIUM"/>
-<grant type="Language" id="ID_LANGUAGE_COMMON"/>
-<grant type="Language" id="ID_LANGUAGE_CRYSTALLIAN"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_HEART"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_ARMOR"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EARTHEN_REST"/>
-<select type="Sub Race" name="Gemborn Subrace" supports="Gemborn" optional="true"/>
-</rules>
-</element>
-<element>
-<element name="Crystal Heart" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_HEART">
-<description>
-<p>Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
-</description>
-<sheet>
-<description>Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</description>
-</sheet>
-<rules/>
-</element>
-<element>
-<element name="Crystal Clarity" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY">
-<description>
-<p>Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols.</p>
-</description>
-<sheet>
-<description>Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic.</description>
-</sheet>
-<rules/>
-</element>
-<element>
-<element name="Natural Armor" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_NATURAL_ARMOR">
-<description>
-<p>Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.</p>
-</description>
-<sheet>
-<description>Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.</description>
-</sheet>
-<rules/>
-</element>
-<element>
-<element name="Earthen Rest" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EARTHEN_REST">
-<description>
-<p>Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2 hours for a short rest and 4 hours for a long rest.</p>
-</description>
-<sheet>
-<description>Gemborn ground themselves by burying their feet in the earth.</description>
-</sheet>
-<rules/>
-</element>
-<element>
-<element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_Gemborn_SUBRACE">
-<description>
-<p>Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges. Amethyst births the psychic, Diamond the strong, Emerald the natural, Sapphire the serene, Ruby the fiery, and Rose Quartz the compassionate. Essentially, the Gemborn are a living reflection of the earth's crystalline diversity.</p>
-</description>
-<sheet display="false"/>
-<rules>
-<select type="Sub Race" name="Gemborn Subrace" supports="gemborn"/>
-</rules>
-</element>
-<element>
-<element name="Amethyst Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_AMETHYST_GEMBORN">
-<description>
-<p>Amethyst Gemborn are beings of ethereal amethyst, their skin shimmering with an otherworldly glow. They possess unique abilities such as Psychic Sensitivity and Dream Weaver.</p>
-</description>
-<sheet display="false"/>
-<setters>
-<set name="ability score increase" type="intelligence">2</set>
-<set name="ability score increase" type="wisdom">1</set>
-<set name="AC">2</set>
-<set name="alignment">Neutral or Chaotic</set>
-</setters>
-<rules>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PSYCHIC_SENSITIVITY"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DREAM_WEAVER"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PHASEWALK"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MIND_SHIELD"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARCANE_INTUITION"/>
-</rules>
-</element>
-<element>
-<element name="Diamond Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_DIAMOND_GEMBORN">
-<description>
-<p>Diamond Gemborn are clad in crystalline armor, exuding an aura of authority and command. They possess unique abilities such as Adamantine Resilience and Inner Light.</p>
-</description>
-<sheet display="false"/>
-<setters>
-<set name="ability score increase" type="strength">2</set>
-<set name="ability score increase" type="constitution">1</set>
-<set name="AC">3</set>
-<set name="alignment">Lawful</set>
-</setters>
-<rules>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ADAMANTINE_RESILIENCE"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_INNER_LIGHT"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FLAWLESS_FOCUS"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_AURA"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHATTERING_STRIKE"/>
-</rules>
-</element>
-<element>
-<element name="Emerald Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_EMERALD_GEMBORN">
-<description>
-<p>Emerald Gemborn embody the life force of nature, possessing unique abilities such as Nature's Whisperer and Emerald Touch.</p>
-</description>
-<sheet display="false"/>
-<setters>
-<set name="ability score increase" type="wisdom">2</set>
-<set name="ability score increase" type="constitution">1</set>
-<set name="AC">1</set>
-<set name="alignment">Neutral</set>
-</setters>
-<rules>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURES_WHISPERER"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_TOUCH"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FOREST_AFFINITY"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RENEWING_TOUCH"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ONE_WITH_NATURE"/>
-</rules>
-</element>
-<element>
-<element name="Sapphire Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_SAPPHIRE_GEMBORN">
-<description>
-<p>Sapphire Gemborn are calm and collected, possessing unique abilities such as Ocean's Embrace and Voice of Calm.</p>
-</description>
-<sheet display="false"/>
-<setters>
-<set name="ability score increase" type="intelligence">1</set>
-<set name="ability score increase" type="charisma">2</set>
-<set name="AC">2</set>
-<set name="alignment">Neutral Good</set>
-</setters>
-<rules>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_OCEANS_EMBRACE"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_VOICE_OF_CALM"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_TELEPATHIC_COMMUNICATION"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SERENE_MIND"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FLOWING_MOTION"/>
-</rules>
-</element>
-<element>
-<element name="Ruby Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_RUBY_GEMBORN">
-<description>
-<p>Ruby Gemborn possess a fiery spirit, with unique abilities such as Burning Heart and Ruby Flare.</p>
-</description>
-<sheet display="false"/>
-<setters>
-<set name="ability score increase" type="strength">1</set>
-<set name="ability score increase" type="constitution">2</set>
-<set name="AC">2</set>
-<set name="alignment">Varies</set>
-</setters>
-<rules>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BURNING_HEART"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_FLARE"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_IMPOSING_PRESENCE"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RAGE"/>
-</rules>
-</element>
-<element>
-<element name="Rose Quartz Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_ROSE_QUARTZ_GEMBORN">
+  <info>
+    <name>Gemborn</name>
+    <update version="0.1.0">
+      <file name="race-gemborn.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-gemborn.xml"/>
+    </update>
+  </info>
+  <element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
+    <description>
+      <p class="flavor">Gemborn are beings of pure crystal, possessing unique abilities and a deep connection to magic. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
+      <h4>GEMBORN PHYSICAL DESCRIPTION</h4>
+      <p>Gemborn resemble humanoid beings composed of crystalline structures, with appearance varying greatly depending on the type of crystal. They are typically Medium in size, with a height ranging from 6'0" to 7'0" and a weight between 150-200 lbs. Gemborn have a lifespan of 500-1000 years.</p>
+      <h4>LANGUAGES</h4>
+      <p>Gemborn know Common, Crystallian, and one extra language of their choice.</p>
+      <h4>Gemborn Traits</h4>
+      <p>Crystal Heart: Gemborn have advantage on Constitution saving throws against being poisoned or petrified. Crystal Clarity: Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols. Natural Armor: Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier. Earthen Rest: Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2 hours for a short rest and 4 hours for a long rest. Crystal Shard: A sharp fragment of crystal that can be used as a makeshift weapon or tool. Pouch of Crystal Dust: A small pouch containing powdered crystal that can be used for various purposes, such as creating a blinding flash or repairing minor damage to their crystalline form.</p>
+      <h4>Roleplaying Notes</h4>
+      <p>Gemborn are a relatively young race, still discovering their place in the world. They may be viewed with curiosity, awe, or even fear by other races. Their crystalline nature can impact their social interactions. Some Gemborn might find it difficult to express emotions or form deep emotional connections, while others might be unusually sensitive to the emotions of others. Gemborn may have a unique perspective on the world, viewing it through the lens of their crystalline nature. They might be drawn to places of natural beauty, such as crystal caves, gem mines, or shimmering lakes. The different Gemborn variants might have distinct cultural and societal norms. For example, Diamond Gemborn might value strength and resilience, while Rose Quartz Gemborn might prioritize compassion and empathy. As a Gemborn, you are a unique and powerful being, capable of great things. Embrace your crystalline heritage, master your abilities, and discover your place in the world.</p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="height" modifier="2d8">6'0" to 7'0"</set>
+      <set name="weight" modifier="2d4">150-200 lb.</set>
+    </setters>
+    <rules>
+      <stat name="intelligence" value="2"/>
+      <stat name="wisdom" value="1"/>
+      <stat name="strength" value="0"/>
+      <stat name="constitution" value="0"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_LANGUAGE_CRYSTALLIAN"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_HEART"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_ARMOR"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EARTHEN_REST"/>
+      <select type="Sub Race" name="Gemborn Subrace" supports="Gemborn" optional="true"/>
+    </rules>
+  </element>
+  <element name="Crystal Heart" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_HEART">
+    <description>
+      <p>Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
+    </description>
+    <sheet>
+      <description>Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</description>
+    </sheet>
+  </element>
+  <element name="Crystal Clarity" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY">
+    <description>
+      <p>Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic, identifying magical items, or deciphering magical symbols.</p>
+    </description>
+    <sheet>
+      <description>Gemborn have advantage on Intelligence (Arcana) checks related to understanding the nature of magic.</description>
+    </sheet>
+  </element>
+  <element name="Natural Armor" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_NATURAL_ARMOR">
+    <description>
+      <p>Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.</p>
+    </description>
+    <sheet>
+      <description>Gemborn have an AC of 10 + their Dexterity modifier + their Constitution modifier.</description>
+    </sheet>
+  </element>
+  <element name="Earthen Rest" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EARTHEN_REST">
+    <description>
+      <p>Instead of sleeping, Gemborn ground themselves by burying their feet in the earth. This process takes 2 hours for a short rest and 4 hours for a long rest.</p>
+    </description>
+    <sheet>
+      <description>Gemborn ground themselves by burying their feet in the earth.</description>
+    </sheet>
+  </element>
+  <element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_Gemborn_SUBRACE">
+    <description>
+      <p>Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges. Amethyst births the psychic, Diamond the strong, Emerald the natural, Sapphire the serene, Ruby the fiery, and Rose Quartz the compassionate. Essentially, the Gemborn are a living reflection of the earth's crystalline diversity.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Sub Race" name="Gemborn Subrace" supports="gemborn"/>
+    </rules>
+  </element>
+  <element name="Amethyst Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_AMETHYST_GEMBORN">
+    <description>
+      <p>Amethyst Gemborn are beings of ethereal amethyst, their skin shimmering with an otherworldly glow. They possess unique abilities such as Psychic Sensitivity and Dream Weaver.</p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="ability score increase" type="intelligence">2</set>
+      <set name="ability score increase" type="wisdom">1</set>
+      <set name="AC">2</set>
+      <set name="alignment">Neutral or Chaotic</set>
+    </setters>
+    <rules>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_PSYCHIC_SENSITIVITY"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DREAM_WEAVER"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_PHASEWALK"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MIND_SHIELD"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ARCANE_INTUITION"/>
+    </rules>
+  </element>
+  <element name="Diamond Gemborn" type="Subrace" source="Homebrew" id="ID_SUBRACE_DIAMOND_GEMBORN">
+    <description>
+      <p>Diamond Gemborn are clad in crystalline armor, exuding an aura of authority and command. They possess unique abilities such as Adamantine Resilience and Inner Light.</p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="ability score increase" type="strength">2</set>
+      <set name="ability score increase" type="constitution">1</set>
+      <set name="AC">3</set>
+      <set name="alignment">Lawful</set>
+    </setters>
+    <rules>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ADAMANTINE_RESILIENCE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_INNER_LIGHT"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FLAWLESS_FOCUS"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_AURA"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHATTERING_STRIKE"/>
+    </rules>
+  </element>
+  <element name="Emerald Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_EMERALD_GEMBORN">
+    <description>
+      <p>Emerald Gemborn embody the life force of nature, possessing unique abilities such as Nature's Whisperer and Emerald Touch.</p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="ability score increase" type="wisdom">2</set>
+      <set name="ability score increase" type="constitution">1</set>
+      <set name="AC">1</set>
+      <set name="alignment">Neutral</set>
+    </setters>
+    <rules>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURES_WHISPERER"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_TOUCH"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FOREST_AFFINITY"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RENEWING_TOUCH"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ONE_WITH_NATURE"/>
+    </rules>
+  </element>
+  <element name="Sapphire Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_SAPPHIRE_GEMBORN">
+    <description>
+      <p>Sapphire Gemborn are calm and collected, possessing unique abilities such as Ocean's Embrace and Voice of Calm.</p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="ability score increase" type="intelligence">1</set>
+      <set name="ability score increase" type="charisma">2</set>
+      <set name="AC">2</set>
+      <set name="alignment">Neutral Good</set>
+    </setters>
+    <rules>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_OCEANS_EMBRACE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_VOICE_OF_CALM"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_TELEPATHIC_COMMUNICATION"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SERENE_MIND"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FLOWING_MOTION"/>
+    </rules>
+  </element>
+  <element name="Ruby Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_RUBY_GEMBORN">
+    <description>
+      <p>Ruby Gemborn possess a fiery spirit, with unique abilities such as Burning Heart and Ruby Flare.</p>
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="ability score increase" type="strength">1</set>
+      <set name="ability score increase" type="constitution">2</set>
+      <set name="AC">2</set>
+      <set name="alignment">Varies</set>
+    </setters>
+    <rules>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BURNING_HEART"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_FLARE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_IMPOSING_PRESENCE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RAGE"/>
+    </rules>
+  </element>
+  <element name="Rose Quartz Gemborn" type="Subrace" source="Player’s Handbook" id="ID_SUBRACE_ROSE_QUARTZ_GEMBORN">
     <description>
       <p>Rose Quartz Gemborn radiate warmth and compassion, with unique abilities such as Empathic Sense and Soothing Presence.</p>
     </description>
