@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<element name="Crystallian" type="Language" source="Homebrew" id="ID_LANGUAGE_Crystallian">
-<supports>Standard</supports>
-<description>
-<p>Crystallian is not a language of words, but of pure tonal resonance. It is a complex system of precisely calibrated frequencies, akin to the harmonious vibrations of countless tuning forks. Gemborn communicate by manipulating the crystalline structures within their bodies, producing a symphony of clear, ringing tones. Each distinct frequency, and the intricate patterns they form, carries meaning, conveying emotions, concepts, and even magical intent without the need for traditional words.</p>
-</description>
-<setters>
-<set name="standard">true</set>
-<set name="speakers">Gemborn</set>
-<set name="script">Crystallian</set>
-</setters>
-</element>
+  <element name="Crystallian" type="Language" source="Homebrew" id="ID_LANGUAGE_Crystallian">
+        <supports>Standard</supports>
+        <description>
+            <p>Crystallian is not a language of words, but of pure tonal resonance. It is a complex system of precisely calibrated frequencies, akin to the harmonious vibrations of countless tuning forks. Gemborn communicate by manipulating the crystalline structures within their bodies, producing a symphony of clear, ringing tones. Each distinct frequency, and the intricate patterns they form, carries meaning, conveying emotions, concepts, and even magical intent without the need for traditional words.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+            <set name="speakers">Gemborn</set>
+            <set name="script">Crystallian</set>
+        </setters>
+    </element>
