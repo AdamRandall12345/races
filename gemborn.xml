@@ -180,7 +180,7 @@ Once per short or long rest, the Gemborn can deal an extra 1d6 force damage with
 <description>You know Frost Bite.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Frost Bite" supports="Wizard&0"/>
+<select type="Spell" name="Frost Bite" supports="Wizard"/>
 </rules>
 </element>
 <element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
@@ -191,7 +191,7 @@ Once per short or long rest, the Gemborn can deal an extra 1d6 force damage with
 <description>You know Toll the Dead.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Toll the Dead" supports="Wizard&0"/>
+<select type="Spell" name="Toll the Dead" supports="Wizard"/>
 </rules>
 </element>
 <element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
@@ -299,7 +299,7 @@ Advantage on Intelligence (Arcana) checks to recall magic info.
 <description>You know mage hand.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Mage hand" supports="Wizard&0"/>
+<select type="Spell" name="Mage hand" supports="Wizard"/>
 </rules>
 </element>
 <element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
@@ -310,7 +310,7 @@ Advantage on Intelligence (Arcana) checks to recall magic info.
 <description>You know dancing lights.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Dancing Lights" supports="Wizard&0"/>
+<select type="Spell" name="Dancing Lights" supports="Wizard"/>
 </rules>
 </element>
 <element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
@@ -423,7 +423,7 @@ Can attempt to hide even when only lightly obscured by natural Flora.
 <description>You know Acid Splash.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Acid Splash" supports="Wizard&0"/>
+<select type="Spell" name="Acid Splash" supports="Wizard"/>
 </rules>
 </element>
 <element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
@@ -434,7 +434,7 @@ Can attempt to hide even when only lightly obscured by natural Flora.
 <description>You know Thorn Whip.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Thorn Whip" supports="Wizard&0"/>
+<select type="Spell" name="Thorn Whip" supports="Wizard"/>
 </rules>
 </element>
 <element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
@@ -547,7 +547,7 @@ Advantage on saves against being charmed or frightened.
 <description>You know Minor Illusion.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Minor Illusion" supports="Wizard&0"/>
+<select type="Spell" name="Minor Illusion" supports="Wizard"/>
 </rules>
 </element>
 <element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
@@ -558,7 +558,7 @@ Advantage on saves against being charmed or frightened.
 <description>You know Prestidigitation.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Prestidigitation" supports="Wizard&0"/>
+<select type="Spell" name="Prestidigitation" supports="Wizard"/>
 </rules>
 </element>
 <element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
@@ -672,7 +672,7 @@ Can drop to 1 hit point instead of 0 once per long rest.
 <description>You know Fire Bolt.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Fire Bolt" supports="Wizard&0"/>
+<select type="Spell" name="Fire Bolt" supports="Wizard"/>
 </rules>
 </element>
 <element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
@@ -683,7 +683,7 @@ Can drop to 1 hit point instead of 0 once per long rest.
 <description>You know Resistance.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Resistance" supports="Wizard&0"/>
+<select type="Spell" name="Resistance" supports="Wizard"/>
 </rules>
 </element>
 <element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
@@ -796,7 +796,7 @@ The Gemborn can expend a hit die to grant temporary hit points to themselves and
 <description>You know Mending.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Mending" supports="Wizard&0"/>
+<select type="Spell" name="Mending" supports="Wizard"/>
 </rules>
 </element>
 <element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
@@ -807,7 +807,7 @@ The Gemborn can expend a hit die to grant temporary hit points to themselves and
 <description>You know Light.</description>
 </sheet>
 <rules>
-<select type="Spell" name="Light" supports="Wizard&0"/>
+<select type="Spell" name="Light" supports="Wizard"/>
 </rules>
 </element>
 <element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
