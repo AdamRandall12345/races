@@ -250,30 +250,18 @@
         </rules>
     </element>
 
-    <element name="Amethyst Cantrip (Mage Hand)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_AMETHYST_CANTRIP_MAGE_HAND">
-        <description>
-            <p>You know Mage hand</p>
-        </description>
-        <sheet display="false">
-            <description>You know mage hand.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND"/>
-        </rules>
-    </element>
-
-    <element name="Amethyst Cantrip (Dancing Lights)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_AMETHYST_CANTRIP_DANCING_LIGHTS">
-        <description>
-            <p>You know Dancing lights</p>
-        </description>
-        <sheet display="false">
-            <description>You know dancing lights.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS"/>
-        </rules>
-    </element>
-
+    <element name="Amethyst cantrip" type="Racial Trait" source="homebrew" id="ID_RACIAL_TRAIT_amethyst_cantrip">
+<description>
+<p>You know mage hand and dancing lights cantrips</p>
+</description>
+<sheet>
+<description>You know mage hand and dancing lights cantrips. </description>
+</sheet>
+<rules>
+<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND"/>
+<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS"
+</rules>
+</element>
     <element name="Amethyst Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_AMETHYST_EXTRA_LANGUAGE">
         <description>
             <p>You can speak, read, and write one extra language of your choice.</p>
@@ -355,29 +343,18 @@
         </rules>
     </element>
 
-    <element name="Emerald Cantrip (Acid Splash)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_EMERALD_CANTRIP_ACID_SPLASH">
-        <description>
-            <p>You know Acid Splash</p>
-        </description>
-        <sheet display="false">
-            <description>You know Acid Splash.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH"/>
-        </rules>
-    </element>
-
-    <element name="Emerald Cantrip (Thorn Whip)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_EMERALD_CANTRIP_THORN_WHIP">
-        <description>
-            <p>You know Thorn Whip</p>
-        </description>
-        <sheet display="false">
-            <description>You know Thorn Whip.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP"/>
-        </rules>
-    </element>
+    <element name="Emerald cantrip" type="Racial Trait" source="homebrew" id="ID_RACIAL_TRAIT_Emerald_cantrip">
+<description>
+<p>You know Acid splash and Thorn whip cantrips</p>
+</description>
+<sheet>
+<description>You know Acid splash and Thorn whip cantrips. </description>
+</sheet>
+<rules>
+<grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH"/>
+<grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP"
+</rules>
+</element>
 
     <element name="Emerald Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_EMERALD_EXTRA_LANGUAGE">
         <description>
@@ -460,29 +437,18 @@
         </rules>
     </element>
 
-    <element name="Sapphire Cantrip (Minor Illusion)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP_MINOR_ILLUSION">
-        <description>
-            <p>You know Minor Illusion</p>
-        </description>
-        <sheet display="false">
-            <description>You know Minor Illusion.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION"/>
-        </rules>
-    </element>
-
-    <element name="Sapphire Cantrip (Prestidigitation)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP_PRESTIDIGITATION">
-        <description>
-            <p>You know Prestidigitation</p>
-        </description>
-        <sheet display="false">
-            <description>You know Prestidigitation.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION"/>
-        </rules>
-    </element>
+    <element name="Sapphire cantrip" type="Racial Trait" source="homebrew" id="ID_RACIAL_TRAIT_Sapphire_cantrip">
+<description>
+<p>You know prestidigitation and minor illusion cantrips</p>
+</description>
+<sheet>
+<description>You know prestidigitation and minor illusion cantrips. </description>
+</sheet>
+<rules>
+<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION"/>
+<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION"
+</rules>
+</element>
 
     <element name="Sapphire Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_SAPPHIRE_EXTRA_LANGUAGE">
         <description>
@@ -566,30 +532,19 @@
         </rules>
     </element>
 
-    <element name="Ruby Cantrip (Fire Bolt)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_RUBY_CANTRIP_FIRE_BOLT">
-        <description>
-            <p>You know Fire Bolt</p>
-        </description>
-        <sheet display="false">
-            <description>You know Fire Bolt.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT"/>
-        </rules>
-    </element>
-
-    <element name="Ruby Cantrip (Resistance)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_RUBY_CANTRIP_RESISTANCE">
-        <description>
-            <p>You know Resistance</p>
-        </description>
-        <sheet display="false">
-            <description>You know Resistance.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_RESISTANCE"/>
-        </rules>
-    </element>
-
+   <element name="Ruby cantrip" type="Racial Trait" source="homebrew" id="ID_RACIAL_TRAIT_Ruby_cantrip">
+<description>
+<p>You know Fire bolt and resistance cantrips</p>
+</description>
+<sheet>
+<description>You know Fire bolt and resistance cantrips. </description>
+</sheet>
+<rules>
+<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT"/>
+<grant type="Spell" id="ID_PHB_SPELL_RESISTANCE"
+</rules>
+</element>
+    
     <element name="Ruby Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_RUBY_EXTRA_LANGUAGE">
         <description>
             <p>You can speak, read, and write one extra language of your choice.</p>
@@ -671,29 +626,18 @@
         </rules>
     </element>
 
-    <element name="Rose Quartz Cantrip (Mending)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP_MENDING">
-        <description>
-            <p>You know Mending</p>
-        </description>
-        <sheet display="false">
-            <description>You know Mending.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_MENDING"/>
-        </rules>
-    </element>
-
-    <element name="Rose Quartz Cantrip (Light)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP_LIGHT">
-        <description>
-            <p>You know Light</p>
-        </description>
-        <sheet display="false">
-            <description>You know Light.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_LIGHT"/>
-        </rules>
-    </element>
+    <element name="Rose Quartz cantrip" type="Racial Trait" source="homebrew" id="ID_RACIAL_TRAIT_Rose_Quartz_cantrip">
+<description>
+<p>You know the light and mending cantrips</p>
+</description>
+<sheet>
+<description>You know the light and mending cantrips. </description>
+</sheet>
+<rules>
+<grant type="Spell" id="ID_PHB_SPELL_LIGHT"/>
+<grant type="Spell" id="ID_PHB_SPELL_MENDING"
+</rules>
+</element>
 
     <element name="Rose Quartz Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_EXTRA_LANGUAGE">
         <description>
