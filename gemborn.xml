@@ -363,7 +363,7 @@
             <description>You know Acid Splash.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_ACID_SPLASH"/>
+            <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH"/>
         </rules>
     </element>
 
@@ -375,7 +375,7 @@
             <description>You know Thorn Whip.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_THORN_WHIP"/>
+            <grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP"/>
         </rules>
     </element>
 
@@ -468,7 +468,7 @@
             <description>You know Minor Illusion.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_MINOR_ILLUSION"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION"/>
         </rules>
     </element>
 
@@ -480,7 +480,7 @@
             <description>You know Prestidigitation.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_PRESTIDIGITATION"/>
+            <grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION"/>
         </rules>
     </element>
 
@@ -574,7 +574,7 @@
             <description>You know Fire Bolt.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_FIRE_BOLT"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT"/>
         </rules>
     </element>
 
@@ -586,7 +586,7 @@
             <description>You know Resistance.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_RESISTANCE"/>
+            <grant type="Spell" id="ID_PHB_SPELL_RESISTANCE"/>
         </rules>
     </element>
 
@@ -679,7 +679,7 @@
             <description>You know Mending.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_MENDING"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MENDING"/>
         </rules>
     </element>
 
@@ -691,7 +691,7 @@
             <description>You know Light.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_LIGHT"/>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT"/>
         </rules>
     </element>
 
