@@ -258,7 +258,7 @@
             <description>You know mage hand.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_MAGE_HAND"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND"/>
         </rules>
     </element>
 
@@ -270,7 +270,7 @@
             <description>You know dancing lights.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_PHB_SPELL_DANCING_LIGHTS"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS"/>
         </rules>
     </element>
 
