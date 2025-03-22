@@ -1,246 +1,707 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
-	<info>
-		<name>Gemborn</name>
-		<update version="0.2">
-			<file name="Gemborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/gemborn.xml"/>
-		</update>
-	</info>
-	<element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_Gemborn">
-		<description>
-			<p class="flavor">Gemborn are beings of pure crystal possessing unique abilities, such as an innate connection to magic and a remarkable resistance to certain forms of harm. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
-			<h4>NATURAL MAGIC</h4>
-			<p>All Gemborn possess an innate connection to magic. They can sense the subtle vibrations of the world around them, the flow of arcane energy through the very air. They resemble humanoid beings composed of crystalline structures, typically 6 to 7 feet tall and weighing 150-200 lbs, with a lifespan of 500-1000 years.</p>
-			<h4>PERSPECTIVE</h4>
-			<p>Gemborn are a relatively young race, still discovering their place in the world. They may be viewed with curiosity, awe, or even fear by other races. Their crystalline nature can impact their social interactions, making it difficult for some to express emotions or form deep connections, while others may be unusually sensitive to the emotions of others.</p>
-			<h4>GEMBORN TRAITS</h4>
-			<p>Crystal Heart: Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
-			<p class="indent"><strong><em>Age.</em></strong> Gemborn transition to physical maturity by 20-25 years, mirroring human development in their late teens or early twenties. They view themselves as still being in a formative stage until they reach 50-100 years, when they feel they have gained sufficient experience and control over their abilities.</p>
-			<p class="indent"><strong><em>Size.</em></strong> Gemborn range from under 6 to over 7 feet tall. Your size is Medium.</p>
-			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
-			<p class="indent"><strong><em>Darkvision.</em></strong> Gemborn can navigate dark caverns due to their crystalline forms adapting to darkness.</p>
-			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Crystallian.</p>
-			<p class="indent"><strong><em>Subrace.</em></strong> Gemborn are born from the heart stone, with each gem shaping their attributes: Amethyst (psychic), Diamond (strong), Emerald (natural), Sapphire (serene), Ruby (fiery), and Rose Quartz (compassionate).</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<stat name="armour class" value="10"/>
-			<stat name="innate speed" value="30" bonus="base"/>
-			<grant type="Size" id="ID_SIZE_MEDIUM"/>
-			<grant type="Vision" id="ID_VISION_DARKVISION"/>
-			<grant type="Language" id="ID_LANGUAGE_COMMON"/>
-			<grant type="Language" id="ID_LANGUAGE_Crystallian"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE"/>
-		</rules>
-	</element>
-	<element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_Gemborn_SUBRACE">
-		<description>
-			<p>Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<select type="Sub Race" name="Gemborn Subrace" supports="Gemborn"/>
-		</rules>
-	</element>
-	<element name="Diamond Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_Diamond_Gemborn">
-		<supports>Gemborn</supports>
-		<description>
-			<p>Clad in crystalline armor, their form is a testament to strength and resilience. They exude an aura of authority and command, their presence inspiring both awe and respect.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and Constitution by 1.</p>
-			<p class="indent"><strong><em>Armour Class.</em></strong> Your AC score increases by 3.</p>
-			<p class="indent"><strong><em>Cantrip.</em></strong> You know the spells Frostbite and Toll the Dead.</p>
-			<p class="indent"><strong><em>Extra Language.</em></strong> You can speak, read, and write one extra language of your choice.</p>
-			<p class="indent"><strong><em>Adamantine Resilience.</em></strong> Resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</p>
-			<p class="indent"><strong><em>Inner Light.</em></strong> 1/long rest, emit bright light in a 15-foot radius for 1 minute, granting allies advantage on sight-based Perception checks.</p>
-			<p class="indent"><strong><em>Flawless Focus.</em></strong> Advantage on Concentration saving throws.</p>
-			<p class="indent"><strong><em>Diamond Aura.</em></strong> As a reaction when hit, the Gemborn can force the attacker to make a Dexterity saving throw or take 1d4 force damage.</p>
-			<p class="indent"><strong><em>Shattering Strike.</em></strong> Once per short or long rest, the Gemborn can deal an extra 1d6 force damage with a melee weapon attack.</p>
-		</description>
-		<sheet display="false"/>
-		<setters>
-			<set name="height" modifier="2d10">6'0"</set>
-			<set name="weight" modifier="1d4">150 lb.</set>
-		</setters>
-		<rules>
-			<stat name="Strength" value="2"/>
-			<stat name="Constitution" value="1"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE"/>
-		</rules>
-	</element>
-	<element name="Diamond weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_Diamond_WEAPON_TRAINING">
-		<description>
-			<p>You have proficiency with Martial Weapons (Swords) and Martial Weapons (Hammers).</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER"/>
-		</rules>
-	</element>
-	<element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
-		<description>
-			<p>You know Frost Bite</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<select type="Spell" name="Frost Bite" supports="Wizard"/>
-		</rules>
-	</element>
-	<element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
-		<description>
-			<p>You know Toll the Dead</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<select type="Spell" name="Toll the Dead" supports="Wizard"/>
-		</rules>
-	</element>
-	<element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
-		<description>
-			<p>You can speak, read, and write one extra language of your choice.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<select type="Language" name="Language" supports="Standard||Exotic"/>
-		</rules>
-	</element>
-	<element name="Amethyst Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_Amethyst_Gemborn">
-		<supports>Gemborn</supports>
-		<description>
-			<p>A being of ethereal amethyst, their skin shimmering with an otherworldly glow. They move through the world with a sense of detached observation, perceiving patterns and connections unseen by others.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2 and Wisdom by 1.</p>
-			<p class="indent"><strong><em>Armour Class.</em></strong> Your AC score increases by 2.</p>
-			<p class="indent"><strong><em>Cantrip.</em></strong> You know the spells Mage Hand and Dancing Lights.</p>
-			<p class="indent"><strong><em>Extra Language.</em></strong> You can speak, read, and write one extra language of your choice.</p>
-			<p class="indent"><strong><em>Psychic Sensitivity.</em></strong> Advantage on Wisdom (Insight) checks and saves against charm/frighten.</p>
-			<p class="indent"><strong><em>Dream Weaver.</em></strong> 1/long rest, trance for vision of future or distant location. Phasewalk: 1/long rest, ethereal state, immune to non magical weapons for 1 round.</p>
-			<p class="indent"><strong><em>Mind Shield.</em></strong> Gemborn have advantage on saving throws against being charmed or frightened once per short or long rest.</p>
-			<p class="indent"><strong><em>Arcane Intuition.</em></strong> Advantage on Intelligence (Arcana) checks to recall magic info.</p>
-		</description>
-		<sheet display="false"/>
-		<setters>
-			<set name="height" modifier="2d10">6'0"</set>
-			<set name="weight" modifier="1d4">150 lb.</set>
-		</setters>
-		<rules>
-			<stat name="intelligence" value="2"/>
-			<stat name="Wisdom" value="1"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE"/>
-		</rules>
-	</element>
-	<element name="Emerald Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_Emerald_Gemborn">
-		<supports>Gemborn</supports>
-		<description>
-			<p>With skin the color of fresh spring leaves, they embody the life force of nature. They possess a deep connection to the natural world, understanding its rhythms and secrets.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2 and Constitution by 1.</p>
-			<p class="indent"><strong><em>Armour Class.</em></strong> Your AC score increases by 1.</p>
-			<p class="indent"><strong><em>Cantrip.</em></strong> You know the spells Acid Splash and Thorn Whip.</p>
-			<p class="indent"><strong><em>Extra Language.</em></strong> You can speak, read, and write one extra language of your choice.</p>
-			<p class="indent"><strong><em>Nature's Whisperer.</em></strong> Can cast "Speak with Plants" and "Druidcraft" each 1/long rest without using a spell slot.</p>
-			<p class="indent"><strong><em>Emerald Touch.</em></strong> The Gemborn can expend a hit die to heal a creature for a number of hit points equal to the number rolled on the die.</p>
-			<p class="indent"><strong><em>Forest Affinity.</em></strong> Advantage on saves against poison and resistance to poison damage.</p>
-			<p class="indent"><strong><em>Renewing Touch.</em></strong> Can expend a hit die to heal a plant or accelerate its growth.</p>
-			<p class="indent"><strong><em>One With Nature.</em></strong> Can attempt to hide even when only lightly obscured by natural Flora.</p>
-		</description>
-		<sheet display="false"/>
-		<setters>
-			<set name="height" modifier="2d10">6'0"</set>
-			<set name="weight" modifier="1d4">150 lb.</set>
-		</setters>
-		<rules>
-			<stat name="Constitution" value="1"/>
-			<stat name="Wisdom" value="2"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE"/>
-		</rules>
-	</element>
-	<element name="Sapphire Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_Sapphire_Gemborn">
-		<supports>Gemborn</supports>
-		<description>
-			<p>Their skin shimmers with the deep hues of the ocean, reflecting their calm and collected demeanor. They are skilled at reading others, their words a soothing balm in times of conflict.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2 and Intelligence by 1.</p>
-			<p class="indent"><strong><em>Armour Class.</em></strong> Your AC score increases by 2.</p>
-			<p class="indent"><strong><em>Cantrip.</em></strong> You know the spells Minor Illusion and Prestidigitation.</p>
-			<p class="indent"><strong><em>Extra Language.</em></strong> You can speak, read, and write one extra language of your choice.</p>
-			<p class="indent"><strong><em>Ocean's Embrace.</em></strong> Can hold breath twice as long and has a swimming speed of 30 feet.</p>
-			<p class="indent"><strong><em>Voice of Calm.</em></strong> Can expend a hit die to cast "Calm Emotions."
-			</p>
-			<p class="indent"><strong><em>Telepathic Communication.</em></strong> Can communicate telepathically with creatures within 30 feet.</p>
-			<p class="indent"><strong><em>Serene Mind.</em></strong> Advantage on saves against being charmed or frightened.</p>
-			<p class="indent"><strong><em>Flowing Motion.</em></strong> Can move through the space of larger creatures.</p>
-		</description>
-		<sheet display="false"/>
-		<setters>
-			<set name="height" modifier="2d10">6'0"</set>
-			<set name="weight" modifier="1d4">150 lb.</set>
-		</setters>
-		<rules>
-			<stat name="Intelligence" value="1"/>
-			<stat name="Charisma" value="2"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE"/>
-		</rules>
-	</element>
-	<element name="Ruby Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_Ruby_Gemborn">
-		<supports>Gemborn</supports>
-		<description>
-			<p>A fiery spirit burns within them, their skin reflecting the fiery depths of a molten core. They are impulsive and passionate, their courage inspires those around them.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2 and Strength by 1.</p>
-			<p class="indent"><strong><em>Armour Class.</em></strong> Your AC score increases by 2.</p>
-			<p class="indent"><strong><em>Cantrip.</em></strong> You know the spells Fire Bolt and Resistance.</p>
-			<p class="indent"><strong><em>Extra Language.</em></strong> You can speak, read, and write one extra language of your choice.</p>
-			<p class="indent"><strong><em>Burning Heart.</em></strong> Resistance to fire damage.</p>
-			<p class="indent"><strong><em>Ruby Flare.</em></strong> Can expend a hit die to cast "Burning Hands."
-			</p>
-			<p class="indent"><strong><em>Imposing Presence.</em></strong> Advantage on Charisma (Intimidation) checks.</p>
-			<p class="indent"><strong><em>Relentless Endurance.</em></strong> Can drop to 1 hit point instead of 0 once per long rest.</p>
-			<p class="indent"><strong><em>Fueled by Fury.</em></strong> Deals extra fire damage with melee attacks while raging.</p>
-		</description>
-		<sheet display="false"/>
-		<setters>
-			<set name="height" modifier="2d10">6'0"</set>
-			<set name="weight" modifier="1d4">150 lb.</set>
-		</setters>
-		<rules>
-			<stat name="Strength" value="1"/>
-			<stat name="Constitution" value="2"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE"/>
-		</rules>
-	</element>
-	<element name="Rose Quartz Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_Rose_Quartz_Gemborn">
-		<supports>Gemborn</supports>
-		<description>
-			<p>Their skin glows with a soft, gentle light, radiating warmth and compassion. They possess a natural empathy, feeling the joys and sorrows of others deeply.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2 and Wisdom by 1.</p>
-			<p class="indent"><strong><em>Armour Class.</em></strong> Your AC score increases by 1.</p>
-			<p class="indent"><strong><em>Cantrip.</em></strong> You know the spells Mending and Light.</p>
-			<p class="indent"><strong><em>Extra Language.</em></strong> You can speak, read, and write one extra language of your choice.</p>
-			<p class="indent"><strong><em>Empathic Sense.</em></strong> Advantage on Persuasion and Insight checks to discern emotions.</p>
-			<p class="indent"><strong><em>Soothing Presence.</em></strong> Can expend a hit die to cast "Sanctuary."
-			</p>
-			<p class="indent"><strong><em>Aura of Tranquility.</em></strong> Advantage on saves against charm/frighten, and nearby allies gain the same advantage.</p>
-			<p class="indent"><strong><em>Healing Hands.</em></strong> Gets the Healing Hands feat.</p>
-			<p class="indent"><strong><em>Beacon of Hope.</em></strong> The Gemborn can expend a hit die to grant temporary hit points to themselves and each creature within 5 feet of them equal to the number rolled on the die.</p>
-		</description>
-		<sheet display="false"/>
-		<setters>
-			<set name="height" modifier="2d10">6'0"</set>
-			<set name="weight" modifier="1d4">150 lb.</set>
-		</setters>
-		<rules>
-			<stat name="Wisdom" value="1"/>
-			<stat name="Charisma" value="2"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE"/>
-		</rules>
-	</element>
+    <info>
+        <name>Gemborn</name>
+        <update version="0.2">
+            <file name="Gemborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/gemborn.xml"/>
+        </update>
+    </info>
+    <element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
+        <description>
+            <p class="flavor">Gemborn are beings of pure crystal possessing unique abilities, such as an innate connection to magic and a remarkable resistance to certain forms of harm. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
+            <h4>NATURAL MAGIC</h4>
+            <p>All Gemborn possess an innate connection to magic. they can sense the subtle vibrations of the world around them, the flow of arcane energy through the very air. They resemble humanoid beings composed of crystalline structures. Appearance varies greatly depending on the type of crystal. They are typically 6 to 7 feet tall and weigh 150-200 lbs, with a lifespan of 500-1000 years.</p>
+            <h4>PERSPECTIVE</h4>
+            <p>Gemborn are a relatively young race, still discovering their place in the world. They may be viewed with curiosity, awe, or even fear by other races.</p>
+            <p class="indent">Their crystalline nature can impact their social interactions. Some Gemborn might find it difficult to express emotions or form deep emotional connections, while others might be unusually sensitive to the emotions of others. Gemborn may have a unique perspective on the world, viewing it through the lens of their crystalline nature. They might be drawn to places of natural beauty, such as crystal caves, gem mines, or shimmering lakes.</p>
+            <h4>GEMBORN TRAITS</h4>
+            <p>Crystal Heart: Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Dexterity score increases by 2.
+            </p>
+            <p class="indent">
+                <strong><em>Age.</em></strong>
+                For all Gemborn, regardless of their crystalline form, the transition to physical maturity occurs with remarkable speed. By the age of 20-25 years, their crystalline forms are fully developed, mirroring the physical development of a human in their late teens or early twenties.
+                The first 20-25 years of a Gemborn's existence are a period of extremely accelerated growth and development. They rapidly absorb and process the ambient magical energies, quickly forming their physical shape and basic understanding of the world. This rapid development is a defining trait of their race, setting them apart from other species.
+                However, while their physical forms reach a point comparable to a human's early adulthood by 20-25, their perception of adulthood is vastly different. It is not a sudden shift, but a 'crystalline echo' that begins at 20-25, resonating throughout their long lives, and slowly shaping their understanding of themselves and the world.
+                Even though they are physically mature, Gemborn do not consider themselves adults at this age. They view themselves as still being in a formative stage, akin to a human teenager or young adult. Their understanding of the world, their control over their abilities, and their emotional maturity are still developing.
+                Gemborn only begin to consider themselves adults when they reach the age of 50-100 years. This is when they feel they have gained sufficient experience and control over their abilities to truly understand themselves and their place in the world. They will still continue to develop their abilities and personalities over centuries, reaching a point of profound wisdom and understanding only after many lifetimes. They will often be seen as young and brash by other races, and only after centuries will they be considered truly wise.
+            </p>
+            <p class="indent">
+                <strong><em>Size.</em></strong>
+                Gemborn range from under 6 to over 7 feet tall. Your size is Medium.
+            </p>
+            <p class="indent">
+                <strong><em>Speed.</em></strong>
+                Your base walking speed is 30 feet.
+            </p>
+            <p class="indent">
+                <strong><em>Darkvision.</em></strong>
+                When the first Gemborn were awakened, their crystalline forms adapted to the perpetual darkness of their birthplace. Their crystals, imbued with the earth's magical energies, developed the ability to amplify the faintest traces of ambient light, allowing them to navigate the dark caverns. Over countless generations, this adaptation became an intrinsic part of their physiology, a fundamental trait shared by all Gemborn subraces.
+            </p>
+            <p class="indent">
+                <strong><em>Languages.</em></strong>
+                You can speak, read, and write Common, and Crystallian
+            </p>
+            <p class="indent">
+                <strong><em>Subrace.</em></strong>
+                Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges. Amethyst births the psychic, Diamond the strong, Emerald the natural, Sapphire the serene, Ruby the fiery, and Rose Quartz the compassionate. Essentially, the Gemborn are a living reflection of the earth's crystalline diversity.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="dexterity" value="2"/>
+            <stat name="armour class" value="10"/>
+            <stat name="innate speed" value="30" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+            <grant type="Language" id="ID_LANGUAGE_CUSTOM" name="Crystallian"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE"/>
+        </rules>
+    </element>
+
+    <element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE">
+        <description>
+            <p>Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges. Amethyst births the psychic, Diamond the strong, Emerald the natural, Sapphire the serene, Ruby the fiery, and Rose Quartz the compassionate. Essentially, the Gemborn are a living reflection of the earth's crystalline diversity.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Sub Race" name="Gemborn Subrace" supports="Gemborn"/>
+        </rules>
+    </element>
+
+    <!-- Diamond Gemborn -->
+    <element name="Diamond Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_DIAMOND_GEMBORN">
+        <supports>Gemborn</supports>
+        <description>
+            <p>Clad in crystalline armor, their form is a testament to strength and resilience. They exude an aura of authority and command, their presence inspiring both awe and respect. Their focus is unwavering, their determination unyielding.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Strength score increases by 2 and constitution by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Armour Class.</em></strong>
+                your AC score increases by 3.
+            </p>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Frostbite and toll the dead.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Adamantine Resilience.</em></strong>
+                Resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.
+            </p>
+            <p class="indent">
+                <strong><em>Inner Light.</em></strong>
+                1/long rest, emit bright light in a 15-foot radius for 1 minute, granting allies advantage on sight-based Perception checks.
+            </p>
+            <p class="indent">
+                <strong><em>Flawless Focus.</em></strong>
+                Advantage on Concentration saving throws.
+            </p>
+            <p class="indent">
+                <strong><em>Diamond Aura.</em></strong>
+                As a reaction when hit, the Gemborn can force the attacker to make a Dexterity saving throw or take 1d4 force damage.
+            </p>
+            <p class="indent">
+                <strong><em>Shattering Strike.</em></strong>
+                Once per short or long rest, the Gemborn can deal an extra 1d6 force damage with a melee weapon attack.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="strength" value="2"/>
+            <stat name="constitution" value="1"/>
+            <stat name="armour class" value="3"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_CANTRIP_FROSTBITE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_CANTRIP_TOLL_THE_DEAD"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_WEAPON_TRAINING"/>
+        </rules>
+    </element>
+
+    <element name="Diamond Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_DIAMOND_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with Martial Weapons (Swords) and Martial Weapons (Hammers).</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with the swords and hammers.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER"/>
+        </rules>
+    </element>
+
+    <element name="Diamond Cantrip (Frostbite)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_DIAMOND_CANTRIP_FROSTBITE">
+        <description>
+            <p>You know Frost Bite</p>
+        </description>
+        <sheet display="false">
+            <description>You know Frost Bite.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_FROSTBITE"/>
+        </rules>
+    </element>
+
+    <element name="Diamond Cantrip (Toll the Dead)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_DIAMOND_CANTRIP_TOLL_THE_DEAD">
+        <description>
+            <p>You know Toll the Dead</p>
+        </description>
+        <sheet display="false">
+            <description>You know Toll the Dead.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_TOLL_THE_DEAD"/>
+        </rules>
+    </element>
+
+    <element name="Diamond Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_DIAMOND_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
+
+    <!-- Amethyst Gemborn -->
+    <element name="Amethyst Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_AMETHYST_GEMBORN">
+        <supports>Gemborn</supports>
+        <description>
+            <p>A being of ethereal amethyst, their skin shimmering with an otherworldly glow. They move through the world with a sense of detached observation, perceiving patterns and connections unseen by others. Their minds are a kaleidoscope of visions, both from the past and potential future.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Intelligence score increases by 2 and Wisdom by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Armour Class.</em></strong>
+                your AC score increases by 2.
+            </p>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Mage Hand and Dancing Lights.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Psychic Sensitivity.</em></strong>
+                Advantage on Wisdom (Insight) checks and saves against charm/frighten.
+            </p>
+            <p class="indent">
+                <strong><em>Dream Weaver.</em></strong>
+                1/long rest, trance for vision of future or distant location.
+                Phasewalk: 1/long rest, ethereal state, immune to non magical weapons for 1 round.
+            </p>
+            <p class="indent">
+                <strong><em>Mind Shield.</em></strong>
+                Gemborn have advantage on saving throws against being charmed or frightened once per short or long rest.
+            </p>
+            <p class="indent">
+                <strong><em>Arcane Intuition.</em></strong>
+                Advantage on Intelligence (Arcana) checks to recall magic info.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="intelligence" value="2"/>
+            <stat name="wisdom" value="1"/>
+            <stat name="armour class" value="2"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_CANTRIP_MAGE_HAND"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_CANTRIP_DANCING_LIGHTS"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_WEAPON_TRAINING"/>
+        </rules>
+    </element>
+
+    <element name="Amethyst Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_AMETHYST_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with the crossbow and dagger.</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with the crossbow and dagger.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER"/>
+        </rules>
+    </element>
+
+    <element name="Amethyst Cantrip (Mage Hand)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_AMETHYST_CANTRIP_MAGE_HAND">
+        <description>
+            <p>You know Mage hand</p>
+        </description>
+        <sheet display="false">
+            <description>You know mage hand.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_MAGE_HAND"/>
+        </rules>
+    </element>
+
+    <element name="Amethyst Cantrip (Dancing Lights)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_AMETHYST_CANTRIP_DANCING_LIGHTS">
+        <description>
+            <p>You know Dancing lights</p>
+        </description>
+        <sheet display="false">
+            <description>You know dancing lights.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_DANCING_LIGHTS"/>
+        </rules>
+    </element>
+
+    <element name="Amethyst Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_AMETHYST_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
+
+    <!-- Emerald Gemborn -->
+    <element name="Emerald Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_EMERALD_GEMBORN">
+        <supports>Gemborn</supports>
+        <description>
+            <p>With skin the color of fresh spring leaves, they embody the life force of nature. They possess a deep connection to the natural world, understanding its rhythms and secrets. Their touch can mend wounds and coax life from barren lands.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Wisdom score increases by 2 and Constitution by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Armour Class.</em></strong>
+                your AC score increases by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Acid Splash and Thorn Whip.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Nature's Whisperer.</em></strong>
+                Can cast "Speak with Plants" and "Druidcraft" each 1/long rest without using a spell slot.
+            </p>
+            <p class="indent">
+                <strong><em>Emerald Touch.</em></strong>
+                The Gemborn can expend a hit die to heal a creature for a number of hit points equal to the number rolled on the die.
+            </p>
+            <p class="indent">
+                <strong><em>Forest Affinity.</em></strong>
+                Advantage on saves against poison and resistance to poison damage.
+            </p>
+            <p class="indent">
+                <strong><em>Renewing Touch.</em></strong>
+                Can expend a hit die to heal a plant or accelerate its growth.
+            </p>
+            <p class="indent">
+                <strong><em>One With Nature.</em></strong>
+                Can attempt to hide even when only lightly obscured by natural Flora.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="constitution" value="1"/>
+            <stat name="wisdom" value="2"/>
+            <stat name="armour class" value="1"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_CANTRIP_ACID_SPLASH"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_CANTRIP_THORN_WHIP"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_WEAPON_TRAINING"/>
+        </rules>
+    </element>
+
+    <element name="Emerald Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EMERALD_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with Quarterstaffs and darts.</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with Quarterstaffs and darts.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART"/>
+        </rules>
+    </element>
+
+    <element name="Emerald Cantrip (Acid Splash)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_EMERALD_CANTRIP_ACID_SPLASH">
+        <description>
+            <p>You know Acid Splash</p>
+        </description>
+        <sheet display="false">
+            <description>You know Acid Splash.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_ACID_SPLASH"/>
+        </rules>
+    </element>
+
+    <element name="Emerald Cantrip (Thorn Whip)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_EMERALD_CANTRIP_THORN_WHIP">
+        <description>
+            <p>You know Thorn Whip</p>
+        </description>
+        <sheet display="false">
+            <description>You know Thorn Whip.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_THORN_WHIP"/>
+        </rules>
+    </element>
+
+    <element name="Emerald Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_EMERALD_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
+
+    <!-- Sapphire Gemborn -->
+    <element name="Sapphire Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_SAPPHIRE_GEMBORN">
+        <supports>Gemborn</supports>
+        <description>
+            <p>Their skin shimmers with the deep hues of the ocean, reflecting their calm and collected demeanor. They are skilled at reading others, their words a soothing balm in times of conflict. Their wisdom runs deep, like the currents of the sea.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Charisma score increases by 2 and Intelligence by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Armour Class.</em></strong>
+                your AC score increases by 2.
+            </p>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Minor Illusion and Prestidigitation.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Ocean's Embrace.</em></strong>
+                Can hold breath twice as long and has a swimming speed of 30 feet.
+            </p>
+            <p class="indent">
+                <strong><em>Voice of Calm.</em></strong>
+                Can expend a hit die to cast "Calm Emotions."
+            </p>
+            <p class="indent">
+                <strong><em>Telepathic Communication.</em></strong>
+                Can communicate telepathically with creatures within 30 feet.
+            </p>
+            <p class="indent">
+                <strong><em>Serene Mind.</em></strong>
+                Advantage on saves against being charmed or frightened.
+            </p>
+            <p class="indent">
+                <strong><em>Flowing Motion.</em></strong>
+                Can move through the space of larger creatures.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="intelligence" value="1"/>
+            <stat name="charisma" value="2"/>
+            <stat name="armour class" value="2"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP_MINOR_ILLUSION"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP_PRESTIDIGITATION"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_WEAPON_TRAINING"/>
+        </rules>
+    </element>
+
+    <element name="Sapphire Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SAPPHIRE_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with rapiers and tridents.</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with rapiers and tridents.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT"/>
+        </rules>
+    </element>
+
+    <element name="Sapphire Cantrip (Minor Illusion)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP_MINOR_ILLUSION">
+        <description>
+            <p>You know Minor Illusion</p>
+        </description>
+        <sheet display="false">
+            <description>You know Minor Illusion.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_MINOR_ILLUSION"/>
+        </rules>
+    </element>
+
+    <element name="Sapphire Cantrip (Prestidigitation)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP_PRESTIDIGITATION">
+        <description>
+            <p>You know Prestidigitation</p>
+        </description>
+        <sheet display="false">
+            <description>You know Prestidigitation.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_PRESTIDIGITATION"/>
+        </rules>
+    </element>
+
+    <element name="Sapphire Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_SAPPHIRE_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
+
+    <!-- Ruby Gemborn -->
+    <element name="Ruby Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_RUBY_GEMBORN">
+        <supports>Gemborn</supports>
+        <description>
+            <p>A fiery spirit burns within them, their skin reflecting the fiery depths of a molten core. They are impulsive and passionate, their courage inspires those around them. Their presence ignites a sense of urgency and determination.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Constitution score increases by 2 and Strength by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Armour Class.</em></strong>
+                your AC score increases by 2.
+            </p>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Fire Bolt and Resistance.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Burning Heart.</em></strong>
+                Resistance to fire damage.
+            </p>
+            <p class="indent">
+                <strong><em>Ruby Flare.</em></strong>
+                Can expend a hit die to cast "Burning Hands."
+            </p>
+            <p class="indent">
+                <strong><em>Imposing Presence.</em></strong>
+                Advantage on Charisma (Intimidation) checks.
+            </p>
+            <p class="indent">
+                <strong><em>Relentless Endurance.</em></strong>
+                Can drop to 1 hit point instead of 0 once per long rest.
+            </p>
+            <p class="indent">
+                <strong><em>Fueled by Fury.</em></strong>
+                Deals extra fire damage with melee attacks while raging.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="strength" value="1"/>
+            <stat name="constitution" value="2"/>
+            <stat name="armour class" value="2"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_CANTRIP_FIRE_BOLT"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_CANTRIP_RESISTANCE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_WEAPON_TRAINING"/>
+        </rules>
+    </element>
+
+    <element name="Ruby Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_RUBY_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with axes and handaxes.</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with axes and handaxes.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE"/>
+        </rules>
+    </element>
+
+    <element name="Ruby Cantrip (Fire Bolt)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_RUBY_CANTRIP_FIRE_BOLT">
+        <description>
+            <p>You know Fire Bolt</p>
+        </description>
+        <sheet display="false">
+            <description>You know Fire Bolt.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_FIRE_BOLT"/>
+        </rules>
+    </element>
+
+    <element name="Ruby Cantrip (Resistance)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_RUBY_CANTRIP_RESISTANCE">
+        <description>
+            <p>You know Resistance</p>
+        </description>
+        <sheet display="false">
+            <description>You know Resistance.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_RESISTANCE"/>
+        </rules>
+    </element>
+
+    <element name="Ruby Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_RUBY_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
+
+    <!-- Rose Quartz Gemborn -->
+    <element name="Rose Quartz Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_ROSE_QUARTZ_GEMBORN">
+        <supports>Gemborn</supports>
+        <description>
+            <p>Their skin glows with a soft, gentle light, radiating warmth and compassion. They possess a natural empathy, feeling the joys and sorrows of others deeply. Their touch is soothing, bringing comfort and healing to those in need.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Charisma score increases by 2 and Wisdom by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Armour Class.</em></strong>
+                your AC score increases by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Mending and Light.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Empathic Sense.</em></strong>
+                Advantage on Persuasion and Insight checks to discern emotions.
+            </p>
+            <p class="indent">
+                <strong><em>Soothing Presence.</em></strong>
+                Can expend a hit die to cast "Sanctuary".
+            </p>
+            <p class="indent">
+                <strong><em>Aura of Tranquility.</em></strong>
+                Advantage on saves against charm/frighten, and nearby allies gain the same advantage.
+            </p>
+            <p class="indent">
+                <strong><em>Healing Hands.</em></strong>
+                Gets the Healing Hands feat.
+            </p>
+            <p class="indent">
+                <strong><em>Beacon of Hope.</em></strong>
+                The Gemborn can expend a hit die to grant temporary hit points to themselves and each creature within 5 feet of them equal to the number rolled on the die
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="wisdom" value="1"/>
+            <stat name="charisma" value="2"/>
+            <stat name="armour class" value="1"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP_MENDING"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP_LIGHT"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_WEAPON_TRAINING"/>
+        </rules>
+    </element>
+
+    <element name="Rose Quartz Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with Light Hammers and Clubs.</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with Light Hammers and Clubs.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB"/>
+        </rules>
+    </element>
+
+    <element name="Rose Quartz Cantrip (Mending)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP_MENDING">
+        <description>
+            <p>You know Mending</p>
+        </description>
+        <sheet display="false">
+            <description>You know Mending.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_MENDING"/>
+        </rules>
+    </element>
+
+    <element name="Rose Quartz Cantrip (Light)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP_LIGHT">
+        <description>
+            <p>You know Light</p>
+        </description>
+        <sheet display="false">
+            <description>You know Light.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB_SPELL_LIGHT"/>
+        </rules>
+    </element>
+
+    <element name="Rose Quartz Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
 </elements>
