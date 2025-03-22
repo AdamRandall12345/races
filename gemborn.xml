@@ -123,8 +123,7 @@
             <stat name="strength" value="2"/>
             <stat name="constitution" value="1"/>
             <stat name="armour class" value="3"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_CANTRIP_FROSTBITE"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_CANTRIP_TOLL_THE_DEAD"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_Diamond_cantrip"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_EXTRA_LANGUAGE"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_WEAPON_TRAINING"/>
         </rules>
@@ -148,29 +147,18 @@
         </rules>
     </element>
 
-    <element name="Diamond Cantrip (Frostbite)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_DIAMOND_CANTRIP_FROSTBITE">
-        <description>
-            <p>You know Frost Bite</p>
-        </description>
-        <sheet display="false">
-            <description>You know Frost Bite.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_FROSTBITE"/>
-        </rules>
-    </element>
-
-    <element name="Diamond Cantrip (Toll the Dead)" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_DIAMOND_CANTRIP_TOLL_THE_DEAD">
-        <description>
-            <p>You know Toll the Dead</p>
-        </description>
-        <sheet display="false">
-            <description>You know Toll the Dead.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_TOLL_THE_DEAD"/>
-        </rules>
-    </element>
+   <element name="Diamond cantrip" type="Racial Trait" source="homebrew" id="ID_RACIAL_TRAIT_Diamond_cantrip">
+<description>
+<p>You know Frostbite and Toll the Dead cantrips</p>
+</description>
+<sheet>
+<description>You know Frostbite and Toll the Dead cantrips. </description>
+</sheet>
+<rules>
+<grant type="Spell" id="ID_XGTE_SPELL_FROSTBITE"/>
+<grant type="Spell" id="ID_XGTE_SPELL_TOLL_THE_DEAD"/>
+</rules>
+</element>
 
     <element name="Diamond Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_DIAMOND_EXTRA_LANGUAGE">
         <description>
@@ -230,8 +218,7 @@
             <stat name="intelligence" value="2"/>
             <stat name="wisdom" value="1"/>
             <stat name="armour class" value="2"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_CANTRIP_MAGE_HAND"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_CANTRIP_DANCING_LIGHTS"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_amethyst_cantrip"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_EXTRA_LANGUAGE"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_WEAPON_TRAINING"/>
         </rules>
@@ -259,9 +246,10 @@
 </sheet>
 <rules>
 <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND"/>
-<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS"
+<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS"/>
 </rules>
 </element>
+    
     <element name="Amethyst Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_AMETHYST_EXTRA_LANGUAGE">
         <description>
             <p>You can speak, read, and write one extra language of your choice.</p>
@@ -323,8 +311,7 @@
             <stat name="constitution" value="1"/>
             <stat name="wisdom" value="2"/>
             <stat name="armour class" value="1"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_CANTRIP_ACID_SPLASH"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_CANTRIP_THORN_WHIP"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_Emerald_cantrip"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_EXTRA_LANGUAGE"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_WEAPON_TRAINING"/>
         </rules>
@@ -352,7 +339,7 @@
 </sheet>
 <rules>
 <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH"/>
-<grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP"
+<grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP"/>
 </rules>
 </element>
 
@@ -417,8 +404,7 @@
             <stat name="intelligence" value="1"/>
             <stat name="charisma" value="2"/>
             <stat name="armour class" value="2"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP_MINOR_ILLUSION"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP_PRESTIDIGITATION"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_Sapphire_cantrip"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_EXTRA_LANGUAGE"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_WEAPON_TRAINING"/>
         </rules>
@@ -446,7 +432,7 @@
 </sheet>
 <rules>
 <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION"/>
-<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION"
+<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION"/>
 </rules>
 </element>
 
@@ -511,8 +497,7 @@
             <stat name="strength" value="1"/>
             <stat name="constitution" value="2"/>
             <stat name="armour class" value="2"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_CANTRIP_FIRE_BOLT"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_CANTRIP_RESISTANCE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_Ruby_cantrip"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_EXTRA_LANGUAGE"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_WEAPON_TRAINING"/>
         </rules>
@@ -541,7 +526,7 @@
 </sheet>
 <rules>
 <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT"/>
-<grant type="Spell" id="ID_PHB_SPELL_RESISTANCE"
+<grant type="Spell" id="ID_PHB_SPELL_RESISTANCE"/>
 </rules>
 </element>
     
@@ -606,8 +591,7 @@
             <stat name="wisdom" value="1"/>
             <stat name="charisma" value="2"/>
             <stat name="armour class" value="1"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP_MENDING"/>
-            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP_LIGHT"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_Rose_Quartz_cantrip"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_EXTRA_LANGUAGE"/>
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_WEAPON_TRAINING"/>
         </rules>
@@ -635,7 +619,7 @@
 </sheet>
 <rules>
 <grant type="Spell" id="ID_PHB_SPELL_LIGHT"/>
-<grant type="Spell" id="ID_PHB_SPELL_MENDING"
+<grant type="Spell" id="ID_PHB_SPELL_MENDING"/>
 </rules>
 </element>
 
