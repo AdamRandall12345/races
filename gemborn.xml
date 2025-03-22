@@ -3,7 +3,7 @@
 <info>
 <name>Gemborn</name>
 <update version="0.2">
-<file name="Gemborn.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-elf.xml"/>
+<file name="Gemborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/gemborn.xml"/>
 </update>
 </info>
 <element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_Gemborn">
