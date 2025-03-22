@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <elements>
-<info>
-<name>Gemborn</name>
-<update version="0.2">
-<file name="Gemborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/gemborn.xml"/>
-</update>
-</info>
+		<info>
+					<name>Gemborn</name>
+					<update version="0.2">
+					<file name="Gemborn.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/gemborn.xml"/>
+					</update>
+		</info>
 <element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_Gemborn">
-<description>
-<p class="flavor">Gemborn are beings of pure crystal possessing unique abilities, such as an innate connection to magic and a remarkable resistance to certain forms of harm. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
-<h4>NATURAL MAGIC</h4>
-<p>All Gemborn possess an innate connection to magic. they can sense the subtle vibrations of the world around them, the flow of arcane energy through the very air. They resemble humanoid beings composed of crystalline structures. Appearance varies greatly depending on the type of crystal. They are typically 6 to 7 feet tall and weigh 150-200 lbs, with a lifespan of 500-1000 years.</p>
-<h4>PERSPECTIVE</h4>
-<p>Gemborn are a relatively young race, still discovering their place in the world. They may be viewed with curiosity, awe, or even fear by other races.</p>
-<p class="indent">Their crystalline nature can impact their social interactions. Some Gemborn might find it difficult to express emotions or form deep emotional connections, while others might be unusually sensitive to the emotions of others. Gemborn may have a unique perspective on the world, viewing it through the lens of their crystalline nature. They might be drawn to places of natural beauty, such as crystal caves, gem mines, or shimmering lakes.</p>
-<h4>GEMBORN TRAITS</h4>
-<p>Crystal Heart: Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
-<p class="indent">
-<strong>
-<em>Ability Score Increase.</em>
-</strong>
-Your Dexterity score increases by 2.
-</p>
-<p class="indent">
-<strong>
-<em>Age.</em>
-</strong>
-For all Gemborn, regardless of their crystalline form, the transition to physical maturity occurs with remarkable speed. By the age of 20-25 years, their crystalline forms are fully developed, mirroring the physical development of a human in their late teens or early twenties.
-The first 20-25 years of a Gemborn's existence are a period of extremely accelerated growth and development. They rapidly absorb and process the ambient magical energies, quickly forming their physical shape and basic understanding of the world. This rapid development is a defining trait of their race, setting them apart from other species.
-However, while their physical forms reach a point comparable to a human's early adulthood by 20-25, their perception of adulthood is vastly different. It is not a sudden shift, but a 'crystalline echo' that begins at 20-25, resonating throughout their long lives, and slowly shaping their understanding of themselves and the world.
-Even though they are physically mature, Gemborn do not consider themselves adults at this age. They view themselves as still being in a formative stage, akin to a human teenager or young adult. Their understanding of the world, their control over their abilities, and their emotional maturity are still developing.
-Gemborn only begin to consider themselves adults when they reach the age of 50-100 years. This is when they feel they have gained sufficient experience and control over their abilities to truly understand themselves and their place in the world. They will still continue to develop their abilities and personalities over centuries, reaching a point of profound wisdom and understanding only after many lifetimes. They will often be seen as young and brash by other races, and only after centuries will they be considered truly wise.
-</p>
-<p class="indent">
-<strong>
-<em>Size.</em>
-</strong>
-Gemborn range from under 6 to over 7 feet tall. Your size is Medium.
-</p>
-<p class="indent">
-<strong>
-<em>Speed.</em>
-</strong>
-Your base walking speed is 30 feet.
-</p>
-<p class="indent">
-<strong>
-<em>Darkvision.</em>
-</strong>
-When the first Gemborn were awakened, their crystalline forms adapted to the perpetual darkness of their birthplace. Their crystals, imbued with the earth's magical energies, developed the ability to amplify the faintest traces of ambient light, allowing them to navigate the dark caverns. Over countless generations, this adaptation became an intrinsic part of their physiology, a fundamental trait shared by all Gemborn subraces.
-</p>
-<p class="indent">
-<strong>
-<em>Languages.</em>
-</strong>
-You can speak, read, and write Common, and Crystallian
-</p>
-<p class="indent">
-<strong>
-<em>Subrace.</em>
-</strong>
-Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges. Amethyst births the psychic, Diamond the strong, Emerald the natural, Sapphire the serene, Ruby the fiery, and Rose Quartz the compassionate. Essentially, the Gemborn are a living reflection of the earth's crystalline diversity.
-</p>
-</description>
-<sheet display="false"/>
-<rules>
-<stat name="armour class" value="10"/>
-<stat name="innate speed" value="30" bonus="base"/>
-<grant type="Size" id="ID_SIZE_MEDIUM"/>
-<grant type="Vision" id="ID_VISION_DARKVISION"/>
-<grant type="Language" id="ID_LANGUAGE_COMMON"/>
-<grant type="Language" id="ID_LANGUAGE_Crystallian"/>
-<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE"/>
-</rules>
+		<description>
+				<p class="flavor">Gemborn are beings of pure crystal possessing unique abilities, such as an innate connection to magic and a remarkable resistance to certain forms of harm. They are a race of both beauty and power, their very existence a testament to the extraordinary forces that shape the world.</p>
+		<h4>NATURAL MAGIC</h4>
+				<p>All Gemborn possess an innate connection to magic. they can sense the subtle vibrations of the world around them, the flow of arcane energy through the very air. They resemble humanoid beings composed of crystalline structures. Appearance varies greatly depending on the type of crystal. They are typically 6 to 7 feet tall and weigh 150-200 lbs, with a lifespan of 500-1000 years.</p>
+		<h4>PERSPECTIVE</h4>
+				<p>Gemborn are a relatively young race, still discovering their place in the world. They may be viewed with curiosity, awe, or even fear by other races.</p>
+				<p class="indent">Their crystalline nature can impact their social interactions. Some Gemborn might find it difficult to express emotions or form deep emotional connections, while others might be unusually sensitive to the emotions of others. Gemborn may have a unique perspective on the world, viewing it through the lens of their crystalline nature. They might be drawn to places of natural beauty, such as crystal caves, gem mines, or shimmering lakes.</p>
+		<h4>GEMBORN TRAITS</h4>
+				<p>Crystal Heart: Gemborn have advantage on Constitution saving throws against being poisoned or petrified.</p>
+				<p class="indent">
+				<strong>
+				<em>Ability Score Increase.</em>
+				</strong>
+				Your Dexterity score increases by 2.
+				</p>
+				<p class="indent">
+				<strong>
+				<em>Age.</em>
+				</strong>
+				For all Gemborn, regardless of their crystalline form, the transition to physical maturity occurs with remarkable speed. By the age of 20-25 years, their crystalline forms are fully developed, mirroring the physical development of a human in their late teens or early twenties.
+				The first 20-25 years of a Gemborn's existence are a period of extremely accelerated growth and development. They rapidly absorb and process the ambient magical energies, quickly forming their physical shape and basic understanding of the world. This rapid development is a defining trait of their race, setting them apart from other species.
+				However, while their physical forms reach a point comparable to a human's early adulthood by 20-25, their perception of adulthood is vastly different. It is not a sudden shift, but a 'crystalline echo' that begins at 20-25, resonating throughout their long lives, and slowly shaping their understanding of themselves and the world.
+				Even though they are physically mature, Gemborn do not consider themselves adults at this age. They view themselves as still being in a formative stage, akin to a human teenager or young adult. Their understanding of the world, their control over their abilities, and their emotional maturity are still developing.
+				Gemborn only begin to consider themselves adults when they reach the age of 50-100 years. This is when they feel they have gained sufficient experience and control over their abilities to truly understand themselves and their place in the world. They will still continue to develop their abilities and personalities over centuries, reaching a point of profound wisdom and understanding only after many lifetimes. They will often be seen as young and brash by other races, and only after centuries will they be considered truly wise.
+				</p>
+				<p class="indent">
+				<strong>
+				<em>Size.</em>
+				</strong>
+				Gemborn range from under 6 to over 7 feet tall. Your size is Medium.
+				</p>
+				<p class="indent">
+				<strong>
+				<em>Speed.</em>
+				</strong>
+				Your base walking speed is 30 feet.
+				</p>
+				<p class="indent">
+				<strong>
+				<em>Darkvision.</em>
+				</strong>
+				When the first Gemborn were awakened, their crystalline forms adapted to the perpetual darkness of their birthplace. Their crystals, imbued with the earth's magical energies, developed the ability to amplify the faintest traces of ambient light, allowing them to navigate the dark caverns. Over countless generations, this adaptation became an intrinsic part of their physiology, a fundamental trait shared by all Gemborn subraces.
+				</p>
+				<p class="indent">
+				<strong>
+				<em>Languages.</em>
+				</strong>
+				You can speak, read, and write Common, and Crystallian
+				</p>
+				<p class="indent">
+				<strong>
+				<em>Subrace.</em>
+				</strong>
+				Gemborn are born from the power of the heart stone, giving life to the gems and bringing their attributes to the fore. Each gem, with its unique magical properties, shapes the Gemborn that emerges. Amethyst births the psychic, Diamond the strong, Emerald the natural, Sapphire the serene, Ruby the fiery, and Rose Quartz the compassionate. Essentially, the Gemborn are a living reflection of the earth's crystalline diversity.
+				</p>
+				</description>
+				<sheet display="false"/>
+		<rules>
+				<stat name="armour class" value="10"/>
+				<stat name="innate speed" value="30" bonus="base"/>
+				<grant type="Size" id="ID_SIZE_MEDIUM"/>
+				<grant type="Vision" id="ID_VISION_DARKVISION"/>
+				<grant type="Language" id="ID_LANGUAGE_COMMON"/>
+				<grant type="Language" id="ID_LANGUAGE_Crystallian"/>
+				<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE"/>
+		</rules>
 </element>
 <element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_Gemborn_SUBRACE">
 <description>
