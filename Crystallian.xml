@@ -3,7 +3,7 @@
 <info>
 <name>Crystallian</name>
 <update version="0.0.1">
-<file name="Crystallian.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/languages.xml"/>
+<file name="Crystallian.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Crystallian.xml"/>
 </update>
 </info> 
 <element name="Crystallian" type="Language" source="Homebrew" id="ID_LANGUAGE_Crystallian">
@@ -17,3 +17,4 @@
             <set name="script">Crystallian</set>
         </setters>
     </element>
+</elements>
