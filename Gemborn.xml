@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <elements>
     <info>
         <name>Gemborn</name>
@@ -494,7 +495,6 @@
         <supports>Gemborn</supports>
         <description>
             <p>Their skin shimmers with the deep hues of the ocean, reflecting their calm and collected demeanor. They are skilled at reading others, their words a soothing balm in times of conflict. Their wisdom runs deep, like the currents of the sea.</p>
-        </description>
             <p class="indent">
                 <strong><em>Ability Score Increase.</em></strong>
                 Your Charisma score increases by 2 and Intelligence by 1.
@@ -503,5 +503,484 @@
                 <strong><em>Natural Armor.</em></strong>
                 Your crystalline form provides natural protection. When you aren't wearing armor, your AC equals 12 + your Dexterity modifier.
             </p>
-</element>
-    </elements>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Minor Illusion and Prestidigitation.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Ocean's Embrace.</em></strong>
+                Can hold breath twice as long and has a swimming speed of 30 feet.
+            </p>
+            <p class="indent">
+                <strong><em>Voice of Calm.</em></strong>
+                Can expend a hit die to cast "Calm Emotions."
+            </p>
+            <p class="indent">
+                <strong><em>Telepathic Communication.</em></strong>
+                Can communicate telepathically with creatures within 30 feet.
+            </p>
+            <p class="indent">
+                <strong><em>Serene Mind.</em></strong>
+                Advantage on saves against being charmed or frightened.
+            </p>
+            <p class="indent">
+                <strong><em>Flowing Motion.</em></strong>
+                Can move through the space of larger creatures.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="intelligence" value="1"/>
+            <stat name="charisma" value="2"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_NATURAL_ARMOR"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_WEAPON_TRAINING"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_OCEANS_EMBRACE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_VOICE_OF_CALM"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_TELEPATHIC_COMMUNICATION"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SERENE_MIND"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FLOWING_MOTION"/>
+        </rules>
+    </element>
+
+    <!-- Added Natural Armor for Sapphire -->
+    <element name="Sapphire Natural Armor" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SAPPHIRE_NATURAL_ARMOR">
+        <description>
+            <p>Your crystalline form provides natural protection. When you aren't wearing armor, your AC equals 12 + your Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>When not wearing armor, your AC is 12 + your Dexterity modifier.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:calculation" value="12" bonus="base" equipped="[armor:none]"/>
+        </rules>
+    </element>
+
+    <element name="Sapphire Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SAPPHIRE_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with Rapiers and Tridents.</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with Rapiers and Tridents.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT"/>
+        </rules>
+    </element>
+
+    <element name="Sapphire Cantrip" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SAPPHIRE_CANTRIP">
+        <description>
+            <p>You know the Minor Illusion and Prestidigitation cantrips.</p>
+        </description>
+        <sheet>
+            <description>You know the Minor Illusion and Prestidigitation cantrips.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION"/>
+            <grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION"/>
+        </rules>
+    </element>
+
+    <element name="Sapphire Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_SAPPHIRE_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
+
+    <!-- Added Sapphire abilities -->
+    <element name="Ocean's Embrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_OCEANS_EMBRACE">
+        <description>
+            <p>You can hold your breath twice as long as normal and have a swimming speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>You can hold your breath twice as long as normal and have a swimming speed of 30 feet.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:swim" value="30" bonus="base"/>
+        </rules>
+    </element>
+
+    <element name="Voice of Calm" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_VOICE_OF_CALM">
+        <description>
+            <p>You can expend a hit die to cast Calm Emotions without using a spell slot.</p>
+        </description>
+        <sheet>
+            <description>You can expend a hit die to cast Calm Emotions without using a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" spellcasting="Special" prepared="true"/>
+        </rules>
+    </element>
+
+    <element name="Telepathic Communication" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_TELEPATHIC_COMMUNICATION">
+        <description>
+            <p>You can communicate telepathically with any creature you can see within 30 feet of you. You don't need to share a language with the creature, but it must be able to understand at least one language.</p>
+        </description>
+        <sheet>
+            <description>You can communicate telepathically with any creature you can see within 30 feet of you.</description>
+        </sheet>
+    </element>
+
+    <element name="Serene Mind" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SERENE_MIND">
+        <description>
+            <p>You have advantage on saving throws against being charmed or frightened.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being charmed or frightened.</description>
+        </sheet>
+    </element>
+
+    <element name="Flowing Motion" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_FLOWING_MOTION">
+        <description>
+            <p>You can move through the space of any creature that is of a size larger than yours.</p>
+        </description>
+        <sheet>
+            <description>You can move through the space of any creature that is of a size larger than yours.</description>
+        </sheet>
+    </element>
+
+    <!-- Ruby Gemborn -->
+    <element name="Ruby Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_RUBY_GEMBORN">
+        <supports>Gemborn</supports>
+        <description>
+            <p>A fiery spirit burns within them, their skin reflecting the fiery depths of a molten core. They are impulsive and passionate, their courage inspires those around them. Their presence ignites a sense of urgency and determination.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Constitution score increases by 2 and Strength by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Natural Armor.</em></strong>
+                Your crystalline form provides natural protection. When you aren't wearing armor, your AC equals 12 + your Dexterity modifier.
+            </p>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Fire Bolt and Resistance.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Burning Heart.</em></strong>
+                Resistance to fire damage.
+            </p>
+            <p class="indent">
+                <strong><em>Ruby Flare.</em></strong>
+                Can expend a hit die to cast "Burning Hands."
+            </p>
+            <p class="indent">
+                <strong><em>Imposing Presence.</em></strong>
+                Advantage on Charisma (Intimidation) checks.
+            </p>
+            <p class="indent">
+                <strong><em>Relentless Endurance.</em></strong>
+                Can drop to 1 hit point instead of 0 once per long rest.
+            </p>
+            <p class="indent">
+                <strong><em>Fueled by Fury.</em></strong>
+                Deals extra fire damage with melee attacks while raging.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="strength" value="1"/>
+            <stat name="constitution" value="2"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_NATURAL_ARMOR"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_CANTRIP"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_WEAPON_TRAINING"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BURNING_HEART"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RUBY_FLARE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_IMPOSING_PRESENCE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FUELED_BY_FURY"/>
+        </rules>
+    </element>
+
+    <!-- Added Natural Armor for Ruby -->
+    <element name="Ruby Natural Armor" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_RUBY_NATURAL_ARMOR">
+        <description>
+            <p>Your crystalline form provides natural protection. When you aren't wearing armor, your AC equals 12 + your Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>When not wearing armor, your AC is 12 + your Dexterity modifier.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:calculation" value="12" bonus="base" equipped="[armor:none]"/>
+        </rules>
+    </element>
+
+    <element name="Ruby Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_RUBY_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with axes and handaxes.</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with axes and handaxes.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE"/>
+        </rules>
+    </element>
+
+    <element name="Ruby Cantrip" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_RUBY_CANTRIP">
+        <description>
+            <p>You know the Fire Bolt and Resistance cantrips.</p>
+        </description>
+        <sheet>
+            <description>You know the Fire Bolt and Resistance cantrips.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT"/>
+            <grant type="Spell" id="ID_PHB_SPELL_RESISTANCE"/>
+        </rules>
+    </element>
+
+    <element name="Ruby Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_RUBY_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
+
+    <!-- Added Ruby abilities -->
+    <element name="Burning Heart" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_BURNING_HEART">
+        <description>
+            <p>You have resistance to fire damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/>
+        </rules>
+    </element>
+
+    <element name="Ruby Flare" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_RUBY_FLARE">
+        <description>
+            <p>You can expend a hit die to cast Burning Hands without using a spell slot.</p>
+        </description>
+        <sheet>
+            <description>You can expend a hit die to cast Burning Hands without using a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Special" prepared="true"/>
+        </rules>
+    </element>
+
+    <element name="Imposing Presence" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_IMPOSING_PRESENCE">
+        <description>
+            <p>You have advantage on Charisma (Intimidation) checks.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma (Intimidation) checks.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" bonus="advantage"/>
+        </rules>
+    </element>
+
+    <element name="Relentless Endurance" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE">
+        <description>
+            <p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Fueled by Fury" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_FUELED_BY_FURY">
+        <description>
+            <p>While raging, your melee weapon attacks deal an extra 1d4 fire damage.</p>
+        </description>
+        <sheet>
+            <description>While raging, your melee weapon attacks deal an extra 1d4 fire damage.</description>
+        </sheet>
+    </element>
+
+    <!-- Rose Quartz Gemborn -->
+    <element name="Rose Quartz Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_ROSE_QUARTZ_GEMBORN">
+        <supports>Gemborn</supports>
+        <description>
+            <p>Their skin glows with a soft, gentle light, radiating warmth and compassion. They possess a natural empathy, feeling the joys and sorrows of others deeply. Their touch is soothing, bringing comfort and healing to those in need.</p>
+            <p class="indent">
+                <strong><em>Ability Score Increase.</em></strong>
+                Your Charisma score increases by 2 and Wisdom by 1.
+            </p>
+            <p class="indent">
+                <strong><em>Natural Armor.</em></strong>
+                Your crystalline form provides natural protection. When you aren't wearing armor, your AC equals 11 + your Dexterity modifier.
+            </p>
+            <p class="indent">
+                <strong><em>Cantrip.</em></strong>
+                You know the spells Mending and Light.
+            </p>
+            <p class="indent">
+                <strong><em>Extra Language.</em></strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong><em>Empathic Sense.</em></strong>
+                Advantage on Persuasion and Insight checks to discern emotions.
+            </p>
+            <p class="indent">
+                <strong><em>Soothing Presence.</em></strong>
+                Can expend a hit die to cast "Sanctuary".
+            </p>
+            <p class="indent">
+                <strong><em>Aura of Tranquility.</em></strong>
+                Advantage on saves against charm/frighten, and nearby allies gain the same advantage.
+            </p>
+            <p class="indent">
+                <strong><em>Healing Hands.</em></strong>
+                Gets the Healing Hands feat.
+            </p>
+            <p class="indent">
+                <strong><em>Beacon of Hope.</em></strong>
+                The Gemborn can expend a hit die to grant temporary hit points to themselves and each creature within 5 feet of them equal to the number rolled on the die.
+            </p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d10">6'0"</set>
+            <set name="weight" modifier="1d4">150 lb.</set>
+        </setters>
+        <rules>
+            <stat name="wisdom" value="1"/>
+            <stat name="charisma" value="2"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_NATURAL_ARMOR"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_EXTRA_LANGUAGE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_WEAPON_TRAINING"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMPATHIC_SENSE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SOOTHING_PRESENCE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AURA_OF_TRANQUILITY"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_HEALING_HANDS"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE"/>
+        </rules>
+    </element>
+
+    <!-- Added Natural Armor for Rose Quartz -->
+    <element name="Rose Quartz Natural Armor" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_NATURAL_ARMOR">
+        <description>
+            <p>Your crystalline form provides natural protection. When you aren't wearing armor, your AC equals 11 + your Dexterity modifier.</p>
+        </description>
+        <sheet>
+            <description>When not wearing armor, your AC is 11 + your Dexterity modifier.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:calculation" value="11" bonus="base" equipped="[armor:none]"/>
+        </rules>
+    </element>
+
+    <element name="Rose Quartz Weapon Training" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_WEAPON_TRAINING">
+        <description>
+            <p>You have proficiency with Light Hammers and Clubs.</p>
+        </description>
+        <sheet display="false">
+            <description>You have proficiency with Light Hammers and Clubs.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB"/>
+        </rules>
+    </element>
+
+    <element name="Rose Quartz Cantrip" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_CANTRIP">
+        <description>
+            <p>You know the Mending and Light cantrips.</p>
+        </description>
+        <sheet>
+            <description>You know the Mending and Light cantrips.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MENDING"/>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT"/>
+        </rules>
+    </element>
+
+    <element name="Rose Quartz Extra Language" type="Racial Trait" source="Player's Handbook" id="ID_RACIAL_TRAIT_ROSE_QUARTZ_EXTRA_LANGUAGE">
+        <description>
+            <p>You can speak, read, and write one extra language of your choice.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Language" name="Language" supports="Standard||Exotic"/>
+        </rules>
+    </element>
+
+    <!-- Added Rose Quartz abilities -->
+    <element name="Empathic Sense" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EMPATHIC_SENSE">
+        <description>
+            <p>You have advantage on Charisma (Persuasion) and Wisdom (Insight) checks to discern emotions.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma (Persuasion) and Wisdom (Insight) checks to discern emotions.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" bonus="advantage"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" bonus="advantage"/>
+        </rules>
+    </element>
+
+    <element name="Soothing Presence" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SOOTHING_PRESENCE">
+        <description>
+            <p>You can expend a hit die to cast Sanctuary without using a spell slot.</p>
+        </description>
+        <sheet>
+            <description>You can expend a hit die to cast Sanctuary without using a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" spellcasting="Special" prepared="true"/>
+        </rules>
+    </element>
+
+    <element name="Aura of Tranquility" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_AURA_OF_TRANQUILITY">
+        <description>
+            <p>You have advantage on saving throws against being charmed or frightened. Allies within 10 feet of you also gain this advantage.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being charmed or frightened. Allies within 10 feet of you also gain this advantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Healing Hands" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_HEALING_HANDS">
+        <description>
+            <p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level.</description>
+        </sheet>
+    </element>
+
+    <element name="Beacon of Hope" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_BEACON_OF_HOPE">
+        <description>
+            <p>You can expend a hit die to grant temporary hit points to yourself and each creature within 5 feet of you equal to the number rolled on the die.</p>
+        </description>
+        <sheet>
+            <description>You can expend a hit die to grant temporary hit points to yourself and each creature within 5 feet of you equal to the number rolled on the die.</description>
+        </sheet>
+    </element>
+</elements>
