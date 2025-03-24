@@ -56,7 +56,7 @@
     <grant type="Size" id="ID_SIZE_MEDIUM"/>
     <grant type="Vision" id="ID_VISION_DARKVISION"/>
     <grant type="Language" id="ID_LANGUAGE_COMMON"/>
-    <grant type="Language" id="ID_LANGUAGE_CRYSTALLIAN" name="Crystallian" file="Crystallian.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Crystallian.xml"/>
+    <grant type="Language" id="ID_LANGUAGE_CRYSTALLIAN" name="Crystallian"/>
     <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_HEART"/>
     <grant type="Racial Trait" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE"/>
 </rules>
