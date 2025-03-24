@@ -143,7 +143,13 @@
             <description>When not wearing armor, your AC is 13 + your Dexterity modifier.</description>
         </sheet>
         <rules>
-            <stat name="ac:calculation" value="13" bonus="base" equipped="[armor:none]"/>
+           <stat name="ac:Natural Armor:base" value="10"/>
+<stat name="ac:Natural Armor:dexterity" value="dexterity:modifier"/>
+<stat name="ac:Natural Armor:constitution" value="constitution:modifier"/>
+<stat name="ac:Natural Armor" value="ac:Natural Armor:base"/>
+<stat name="ac:Natural Armor" value="ac:Natural Armor:dexterity"/>
+<stat name="ac:Natural Armor" value="ac:Natural Armor:constitution"/>
+<stat name="ac:calculation" value="ac:Natural Armor" bonus="calculation" equipped="[armor:none]" alt="Natural Armor"/>
         </rules>
     </element>
 
