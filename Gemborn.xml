@@ -143,7 +143,7 @@
             <description>When not wearing armor, your AC is 10 + your Dexterity modifier your Constitution modifier.</description>
         </sheet>
         <rules>
-           <stat name="ac:Natural Armor:base" value="0"/>
+           <stat name="ac:Natural Armor:base" value="3"/>
 <stat name="ac:Natural Armor:dexterity" value="dexterity:modifier"/>
 <stat name="ac:Natural Armor:constitution" value="constitution:modifier"/>
 <stat name="ac:Natural Armor" value="ac:Natural Armor:base"/>
@@ -288,7 +288,7 @@
             <description>When not wearing armor, your AC is 12 + your Dexterity modifier.</description>
         </sheet>
         <rules>
-            <stat name="ac:Natural Armor:base" value="0"/>
+            <stat name="ac:Natural Armor:base" value="2"/>
 <stat name="ac:Natural Armor:dexterity" value="dexterity:modifier"/>
 <stat name="ac:Natural Armor:constitution" value="constitution:modifier"/>
 <stat name="ac:Natural Armor" value="ac:Natural Armor:base"/>
@@ -426,7 +426,7 @@
             <description>When not wearing armor, your AC is 11 + your Dexterity modifier.</description>
         </sheet>
         <rules>
-            <stat name="ac:Natural Armor:base" value="0"/>
+            <stat name="ac:Natural Armor:base" value="1"/>
 <stat name="ac:Natural Armor:dexterity" value="dexterity:modifier"/>
 <stat name="ac:Natural Armor:constitution" value="constitution:modifier"/>
 <stat name="ac:Natural Armor" value="ac:Natural Armor:base"/>
@@ -578,7 +578,7 @@
             <description>When not wearing armor, your AC is 12 + your Dexterity modifier.</description>
         </sheet>
         <rules>
-            <stat name="ac:Natural Armor:base" value="0"/>
+            <stat name="ac:Natural Armor:base" value="2"/>
 <stat name="ac:Natural Armor:dexterity" value="dexterity:modifier"/>
 <stat name="ac:Natural Armor:constitution" value="constitution:modifier"/>
 <stat name="ac:Natural Armor" value="ac:Natural Armor:base"/>
@@ -747,7 +747,7 @@
             <description>When not wearing armor, your AC is 12 + your Dexterity modifier.</description>
         </sheet>
         <rules>
-            <stat name="ac:Natural Armor:base" value="0"/>
+            <stat name="ac:Natural Armor:base" value="2"/>
 <stat name="ac:Natural Armor:dexterity" value="dexterity:modifier"/>
 <stat name="ac:Natural Armor:constitution" value="constitution:modifier"/>
 <stat name="ac:Natural Armor" value="ac:Natural Armor:base"/>
@@ -920,7 +920,7 @@
             <description>When not wearing armor, your AC is 11 + your Dexterity modifier.</description>
         </sheet>
         <rules>
-            <stat name="ac:Natural Armor:base" value="0"/>
+            <stat name="ac:Natural Armor:base" value="1"/>
 <stat name="ac:Natural Armor:dexterity" value="dexterity:modifier"/>
 <stat name="ac:Natural Armor:constitution" value="constitution:modifier"/>
 <stat name="ac:Natural Armor" value="ac:Natural Armor:base"/>
