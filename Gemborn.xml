@@ -56,7 +56,7 @@
     <grant type="Size" id="ID_SIZE_MEDIUM"/>
     <grant type="Vision" id="ID_VISION_DARKVISION"/>
     <grant type="Language" id="ID_LANGUAGE_COMMON"/>
-    <grant type="Language" id="ID_LANGUAGE_CRYSTALLIAN" name="Crystallian"/>
+    <grant type="Language" id="ID_LANGUAGE_CRYSTALLIAN"/>
     <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_HEART"/>
     <grant type="Racial Trait" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE"/>
 </rules>
@@ -982,4 +982,23 @@
             <description>You can expend a hit die to grant temporary hit points to yourself and each creature within 5 feet of you equal to the number rolled on the die.</description>
         </sheet>
     </element>
+    <elements>
+<info>
+<name>Crystallian</name>
+<update version="0.0.1">
+<file name="Crystallian.xml" url="https://raw.githubusercontent.com/AdamRandall12345/races/refs/heads/main/Crystallian.xml" />
+</update>
+</info> 
+<element name="Crystallian" type="Language" source="Homebrew" id="ID_LANGUAGE_CRYSTALLIAN">
+        <supports>Standard</supports>
+        <description>
+            <p>Crystallian is not a language of words, but of pure tonal resonance. It is a complex system of precisely calibrated frequencies, akin to the harmonious vibrations of countless tuning forks. Gemborn communicate by manipulating the crystalline structures within their bodies, producing a symphony of clear, ringing tones. Each distinct frequency, and the intricate patterns they form, carries meaning, conveying emotions, concepts, and even magical intent without the need for traditional words.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+            <set name="speakers">Gemborn</set>
+            <set name="script">Crystallian</set>
+        </setters>
+    </element>
+</elements>
 </elements>
