@@ -288,7 +288,6 @@
             <stat name="ac:natural armor:Gemborn" value="12" bonus="base" />
             <stat name="ac:natural armor:Gemborn" value="dexterity:modifier" bonus="ability" />
             <stat name="ac:natural armor:Gemborn" value="constituion:modifier" bonus="ability" />
-            <stat name="ac:calculation" value="ac:natural armor:Gemborn" bonus="calculation" alt="Natural Armor (Gemborn)" />
         </rules>
     </element>
 
@@ -423,7 +422,6 @@
             <stat name="ac:natural armor:Gemborn" value="11" bonus="base" />
             <stat name="ac:natural armor:Gemborn" value="dexterity:modifier" bonus="ability" />
             <stat name="ac:natural armor:Gemborn" value="constituion:modifier" bonus="ability" />
-            <stat name="ac:calculation" value="ac:natural armor:Gemborn" bonus="calculation" alt="Natural Armor (Gemborn)" />
         </rules>
     </element>
 
@@ -572,7 +570,6 @@
              <stat name="ac:natural armor:Gemborn" value="12" bonus="base" />
             <stat name="ac:natural armor:Gemborn" value="dexterity:modifier" bonus="ability" />
             <stat name="ac:natural armor:Gemborn" value="constituion:modifier" bonus="ability" />
-            <stat name="ac:calculation" value="ac:natural armor:Gemborn" bonus="calculation" alt="Natural Armor (Gemborn)" />
         </rules>
     </element>
 
@@ -738,7 +735,6 @@
              <stat name="ac:natural armor:Gemborn" value="12" bonus="base" />
             <stat name="ac:natural armor:Gemborn" value="dexterity:modifier" bonus="ability" />
             <stat name="ac:natural armor:Gemborn" value="constituion:modifier" bonus="ability" />
-            <stat name="ac:calculation" value="ac:natural armor:Gemborn" bonus="calculation" alt="Natural Armor (Gemborn)" />
         </rules>
     </element>
 
@@ -908,7 +904,6 @@
             <stat name="ac:natural armor:Gemborn" value="11" bonus="base" />
             <stat name="ac:natural armor:Gemborn" value="dexterity:modifier" bonus="ability" />
             <stat name="ac:natural armor:Gemborn" value="constituion:modifier" bonus="ability" />
-            <stat name="ac:calculation" value="ac:natural armor:Gemborn" bonus="calculation" alt="Natural Armor (Gemborn)" />
         </rules>
     </element>
 
