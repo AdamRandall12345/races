@@ -68,15 +68,15 @@
     <set name="names" type="female">Sparkle, Clarity, Brilliance, Radiance, Gem, Jewel</set>
     <set name="names" type="family">Deepvein, Stoneheart, Crystalcore, Gemsoul, Shiningstorm, Gemflower, Lightfacet, Hardedge</set>
     <set name="names-format">{{name}} {{family}}</set>
-    <set name="height" modifier="2d6">5'0"</set>
-    <set name="weight" modifier="2d6">120 lb.</set>
+    <set name="height" modifier="2d6">6'0"</set>
+    <set name="weight" modifier="2d6">150 lb.</set>
   </setters>
   <rules>
     <stat name="constitution" value="1" />
     <stat name="innate speed" value="30" bonus="base"/>
     <grant type="Size" id="ID_SIZE_MEDIUM"/>
     <grant type="Language" id="ID_LANGUAGE_COMMON"/>
-    <grant type="Language" id="ID_LANGUAGE_TERRAN"/>
+    <grant type="Language" id="ID_LANGUAGE_CRYSTALLIAN"/>
     <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTALLINE_HEART"/>
     <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY"/>
     <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_ARMOR"/>
