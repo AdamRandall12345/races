@@ -1,4 +1,397 @@
-</p>
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+<info>
+  <name>Gemborn</name>
+  <update version="0.1">
+    <file name="race-gemborn.xml" url=""/>
+  </update>
+</info>
+
+<element name="Gemborn" type="Race" source="Homebrew" id="ID_RACE_GEMBORN">
+  <description>
+    <p class="flavor">Crystalline beings with natural armor and resistance to toxins, Gemborn are a race of sentient gem-like humanoids.</p>
+    <h4>CRYSTALLINE FORMS</h4>
+    <p>Gemborn appear as humanoid figures composed of crystalline material, reflecting the gemstone type they embody. Their bodies are solid yet still possess articulation and flexibility, allowing them to move naturally. Gemborn have faceted features and their skin can range from opaque to translucent depending on the individual. They come in various colors and patterns that match their corresponding gemstone.</p>
+    <p class="indent">The eyes of a Gemborn often glow with an inner light, and many emit a subtle shimmer in certain lighting conditions. Gemborn do not have hair in the traditional sense, but many develop crystal formations that mimic hair or other decorative features.</p>
+    <h4>ANCIENT ORIGINS</h4>
+    <p>The origins of the Gemborn are often tied to ancient magical events or elemental forces. Some believe they were created by powerful mages or deities, while others theorize they emerged naturally from areas where magic and minerals converged over countless centuries. Regardless of their beginnings, Gemborn are now an established, if uncommon, presence in the world.</p>
+    <p class="indent">Gemborn communities are typically small and often situated near mineral-rich locations or areas of natural magical energy. They can live for centuries, with some of the oldest Gemborn having memories that span a millennium.</p>
+    <h4>LIVING CRYSTALS</h4>
+    <p>Despite their mineral composition, Gemborn are fully sentient beings with emotions, desires, and perspectives like other races. They do not require food or water in the traditional sense, instead drawing sustenance from minerals, sunlight, or ambient magical energy. They do, however, enjoy the taste of certain minerals and crystals.</p>
+    <p class="indent">Gemborn are often sought after for their natural knowledge of minerals and gems, as well as their innate connection to certain magical energies. Many find work as jewelers, miners, enchanters, or advisors on matters related to precious stones.</p>
+    <h4>GEMBORN NAMES</h4>
+    <p>Gemborn names often reflect qualities of light, stone, or crystal formations. Some take names based on mineral terminology or descriptive qualities of gems. Family names, if used, often describe a quality of their specific gem type or the location where they first formed.</p>
+    <p>
+      <span class="feature">First Names:</span> Facet, Gleam, Luster, Prism, Shine, Shimmer, Crystal, Glint, Sparkle, Clarity, Brilliance, Radiance
+      <br/>
+      <span class="feature">Family Names:</span> Deepvein, Stoneheart, Crystalcore, Gemsoul, Shiningstorm, Gemflower, Lightfacet, Hardedge
+    </p>
+    <h4>GEMBORN TRAITS</h4>
+    <p>As a Gemborn, you have the following racial traits.</p>
+    <p class="indent">
+      <strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.
+    </p>
+    <p class="indent">
+      <strong><em>Age.</em></strong> Gemborn mature at about the same rate as humans but can live for centuries. The oldest Gemborn can reach ages of over 800 years.
+    </p>
+    <p class="indent">
+      <strong><em>Alignment.</em></strong> Gemborn tend toward lawful alignments, appreciating order and structure much like the crystalline patterns of their bodies. They span the moral spectrum, with most being neutral.
+    </p>
+    <p class="indent">
+      <strong><em>Size.</em></strong> Gemborn stand between 5 and 6 feet tall and weigh between 120 and 220 pounds due to their dense crystalline structure. Your size is Medium.
+    </p>
+    <p class="indent">
+      <strong><em>Speed.</em></strong> Your base walking speed is 30 feet.
+    </p>
+    <p class="indent">
+      <strong><em>Crystalline Heart.</em></strong> You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned and Petrified conditions.
+    </p>
+    <p class="indent">
+      <strong><em>Crystal Clarity.</em></strong> You have Advantage on Intelligence checks regarding gems and crystals.
+    </p>
+    <p class="indent">
+      <strong><em>Natural Armor.</em></strong> Your naturally hard body provides you a base AC of 15 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal.
+    </p>
+    <p class="indent">
+      <strong><em>Pouch of Crystal Dust.</em></strong> A small pouch containing powdered crystal that can be used for various purposes. You can use this pouch to cast Prestidigitation by sprinkling dust.
+    </p>
+    <p class="indent">
+      <strong><em>Languages.</em></strong> You can speak, read, and write Common and Terran.
+    </p>
+    <p class="indent">
+      <strong><em>Subrace.</em></strong> Six main subraces of Gemborn exist: Amethyst, Diamond, Emerald, Sapphire, Ruby, and Rose Quartz. Choose one of these subraces.
+    </p>
+  </description>
+  <sheet display="false"/>
+  <setters>
+    <set name="names" type="male">Facet, Gleam, Luster, Prism, Shine, Shimmer, Crystal, Glint</set>
+    <set name="names" type="female">Sparkle, Clarity, Brilliance, Radiance, Gem, Jewel</set>
+    <set name="names" type="family">Deepvein, Stoneheart, Crystalcore, Gemsoul, Shiningstorm, Gemflower, Lightfacet, Hardedge</set>
+    <set name="names-format">{{name}} {{family}}</set>
+    <set name="height" modifier="2d6">5'0"</set>
+    <set name="weight" modifier="2d6">120 lb.</set>
+  </setters>
+  <rules>
+    <stat name="constitution" value="1" />
+    <stat name="innate speed" value="30" bonus="base"/>
+    <grant type="Size" id="ID_SIZE_MEDIUM"/>
+    <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+    <grant type="Language" id="ID_LANGUAGE_TERRAN"/>
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTALLINE_HEART"/>
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY"/>
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_ARMOR"/>
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_POUCH_OF_CRYSTAL_DUST"/>
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE"/>
+  </rules>
+</element>
+
+<element name="Crystalline Heart" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTALLINE_HEART">
+  <description>
+    <p>You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned and Petrified conditions.</p>
+  </description>
+  <sheet>
+    <description>You have resistance to poison damage and advantage on saving throws against being poisoned or petrified.</description>
+  </sheet>
+  <rules>
+    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+    <grant type="Grants" id="ID_INTERNAL_GRANT_ADVANTAGE_POISONED_SAVING_THROW" />
+    <grant type="Grants" id="ID_INTERNAL_GRANT_ADVANTAGE_PETRIFIED_SAVING_THROW" />
+  </rules>
+</element>
+
+<element name="Crystal Clarity" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_CRYSTAL_CLARITY">
+  <description>
+    <p>You have Advantage on Intelligence checks regarding gems and crystals.</p>
+  </description>
+  <sheet>
+    <description>You have advantage on Intelligence checks regarding gems and crystals.</description>
+  </sheet>
+</element>
+
+<element name="Natural Armor" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_NATURAL_ARMOR">
+  <description>
+    <p>Your naturally hard body provides you a base AC of 15 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+  </description>
+  <sheet>
+    <description>Your naturally hard body provides you a base AC of {{ac:natural}} (Dex modifier doesn't apply). You can't wear light, medium, or heavy armor, but can use shields.</description>
+  </sheet>
+  <rules>
+    <stat name="ac:natural" value="15" bonus="base" />
+  </rules>
+</element>
+
+<element name="Pouch of Crystal Dust" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_POUCH_OF_CRYSTAL_DUST">
+  <description>
+    <p>A small pouch containing powdered crystal that can be used for various purposes. You can use this pouch to cast Prestidigitation by sprinkling dust.</p>
+  </description>
+  <sheet>
+    <description>You have a small pouch of crystal dust that allows you to cast Prestidigitation.</description>
+  </sheet>
+  <rules>
+    <grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+  </rules>
+</element>
+
+<element name="Gemborn Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_GEMBORN_SUBRACE">
+  <description>
+    <p>Six main subraces of Gemborn exist: Amethyst, Diamond, Emerald, Sapphire, Ruby, and Rose Quartz. Choose one of these subraces.</p>
+  </description>
+  <sheet display="false"/>
+  <rules>
+    <select type="Sub Race" name="Gemborn Subrace" supports="Gemborn"/>
+  </rules>
+</element>
+
+<!-- Amethyst Gemborn -->
+<element name="Amethyst Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_AMETHYST_GEMBORN">
+  <supports>Gemborn</supports>
+  <description>
+    <p>As an Amethyst Gemborn, you possess enhanced psychic sensitivity and mental focus. Your purplish crystalline body has patterns that seem to shift and flow like thoughts, and your eyes glow with inner wisdom.</p>
+    <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2, and your Wisdom score increases by 1.</p>
+    <p class="indent"><strong><em>Natural Armor Enhancement.</em></strong> Increase your Natural armor from 15 to 17.</p>
+    <p class="indent"><strong><em>Psychic Sensitivity.</em></strong> You have Advantage on Wisdom (Insight) checks and saving throws you make to avoid or end the Charmed and Frightened conditions.</p>
+    <p class="indent"><strong><em>Dream Weaver.</em></strong> Once per short or long rest you may use your Pouch of Crystal Dust to cast the Augury spell, supplementing the material components with the pouch.</p>
+    <p class="indent"><strong><em>Flawless Focus.</em></strong> You have Advantage on Concentration saving throws.</p>
+    <p class="indent"><strong><em>Cantrips.</em></strong> You know the Mage Hand and Dancing Lights cantrips. When you cast Mage Hand with this trait, the hand is invisible.</p>
+  </description>
+  <sheet display="false"/>
+  <setters>
+    <set name="height" modifier="2d6">5'0"</set>
+    <set name="weight" modifier="2d6">120 lb.</set>
+  </setters>
+  <rules>
+    <stat name="intelligence" value="2" />
+    <stat name="wisdom" value="1" />
+    <stat name="ac:natural" value="2" bonus="enhancement" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_PSYCHIC_SENSITIVITY" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_DREAM_WEAVER" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_AMETHYST_FLAWLESS_FOCUS" />
+    <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+    <grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" />
+  </rules>
+</element>
+
+<element name="Psychic Sensitivity" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_AMETHYST_PSYCHIC_SENSITIVITY">
+  <description>
+    <p>You have Advantage on Wisdom (Insight) checks and saving throws you make to avoid or end the Charmed and Frightened conditions.</p>
+  </description>
+  <sheet>
+    <description>You have advantage on Wisdom (Insight) checks and saving throws against being charmed or frightened.</description>
+  </sheet>
+  <rules>
+    <grant type="Grants" id="ID_INTERNAL_GRANT_ADVANTAGE_WISDOM_INSIGHT" />
+    <grant type="Grants" id="ID_INTERNAL_GRANT_ADVANTAGE_CHARMED_SAVING_THROW" />
+    <grant type="Grants" id="ID_INTERNAL_GRANT_ADVANTAGE_FRIGHTENED_SAVING_THROW" />
+  </rules>
+</element>
+
+<element name="Dream Weaver" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_AMETHYST_DREAM_WEAVER">
+  <description>
+    <p>Once per short or long rest you may use your Pouch of Crystal Dust to cast the Augury spell, supplementing the material components with the pouch.</p>
+  </description>
+  <sheet usage="1/Short Rest">
+    <description>You may use your Pouch of Crystal Dust to cast the Augury spell.</description>
+  </sheet>
+  <rules>
+    <grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
+  </rules>
+</element>
+
+<element name="Flawless Focus" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_AMETHYST_FLAWLESS_FOCUS">
+  <description>
+    <p>You have Advantage on Concentration saving throws.</p>
+  </description>
+  <sheet>
+    <description>You have advantage on saving throws to maintain concentration.</description>
+  </sheet>
+  <rules>
+    <grant type="Grants" id="ID_INTERNAL_GRANT_ADVANTAGE_CONSTITUTION_CONCENTRATION_SAVING_THROW" />
+  </rules>
+</element>
+
+<!-- Diamond Gemborn -->
+<element name="Diamond Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_DIAMOND_GEMBORN">
+  <supports>Gemborn</supports>
+  <description>
+    <p>Diamond Gemborn possess incredible durability and can emit dazzling light. Your clear or slightly tinted body refracts light in beautiful patterns, and your crystalline structure is exceptionally strong.</p>
+    <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2, and your Wisdom score increases by 1.</p>
+    <p class="indent"><strong><em>Natural Armor Enhancement.</em></strong> Increase your Natural armor from 15 to 18.</p>
+    <p class="indent"><strong><em>Inner Light.</em></strong> As a Bonus Action you may choose to emit bright light in a 15-foot radius for 1 minute. The light is sunlight. You may use this action a number of times equal to your Proficiency Bonus and regain all uses when you finish a long rest.</p>
+    <p class="indent"><strong><em>Diamond Aura.</em></strong> When your inner light is active and a creature attempts to make an attack while within that light, you may use your reaction to intensify your inner light forcing the creature to attack with Disadvantage. A creature immune to the Blinded condition is not affected by this feature.</p>
+    <p class="indent"><strong><em>Cantrips.</em></strong> You know the Thaumaturgy and Sword Burst cantrips.</p>
+  </description>
+  <sheet display="false"/>
+  <setters>
+    <set name="height" modifier="2d6">5'0"</set>
+    <set name="weight" modifier="2d6">150 lb.</set>
+  </setters>
+  <rules>
+    <stat name="strength" value="2" />
+    <stat name="wisdom" value="1" />
+    <stat name="ac:natural" value="3" bonus="enhancement" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_INNER_LIGHT" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DIAMOND_DIAMOND_AURA" />
+    <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+    <grant type="Spell" id="ID_SPELL_SWORD_BURST" />
+  </rules>
+</element>
+
+<element name="Inner Light" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_DIAMOND_INNER_LIGHT">
+  <description>
+    <p>As a Bonus Action you may choose to emit bright light in a 15-foot radius for 1 minute. The light is sunlight. You may use this action a number of times equal to your Proficiency Bonus and regain all uses when you finish a long rest.</p>
+  </description>
+  <sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+    <description>You emit bright sunlight in a 15-foot radius for 1 minute.</description>
+  </sheet>
+</element>
+
+<element name="Diamond Aura" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_DIAMOND_DIAMOND_AURA">
+  <description>
+    <p>When your inner light is active and a creature attempts to make an attack while within that light, you may use your reaction to intensify your inner light forcing the creature to attack with Disadvantage. A creature immune to the Blinded condition is not affected by this feature.</p>
+  </description>
+  <sheet action="Reaction">
+    <description>When your inner light is active and a creature within the light attacks, you can force it to attack with disadvantage (unless it's immune to being blinded).</description>
+  </sheet>
+</element>
+
+<!-- Emerald Gemborn -->
+<element name="Emerald Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_EMERALD_GEMBORN">
+  <supports>Gemborn</supports>
+  <description>
+    <p>Emerald Gemborn share a deep connection with nature and possess healing abilities. Your green crystalline body often has patterns resembling leaves or vines, and you may have small crystal formations that look like plant life.</p>
+    <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Constitution score increases by 1.</p>
+    <p class="indent"><strong><em>Natural Armor Enhancement.</em></strong> Increase your Natural armor from 15 to 16.</p>
+    <p class="indent"><strong><em>Nature's Whisperer.</em></strong> Once per short or long rest you may use your Pouch of Crystal Dust to cast the Speak With Plants spell.</p>
+    <p class="indent"><strong><em>Rejuvenation.</em></strong> As an action, you may choose one creature within 30 feet of you and create a magical bond between the two of you. This bond lasts for one minute so long as that creature remains within 30 feet of you and you maintain concentration (as if you were concentrating on a spell). While the bond is active, at the start of your turn you take 1d6 Necrotic damage and the other creature heals twice the amount of damage you take. This Necrotic damage cannot be reduced by any means. You may use this feature a number of times equal to your Proficiency Bonus. You regain expended uses at the end of a Long Rest.</p>
+    <p class="indent"><strong><em>One With Nature.</em></strong> When in a forest, you leave no tracks and can automatically discern true north. Furthermore, you can attempt to hide even when only lightly obscured by natural phenomena.</p>
+    <p class="indent"><strong><em>Cantrips.</em></strong> You know the Druidcraft and Thorn Whip cantrips.</p>
+  </description>
+  <sheet display="false"/>
+  <setters>
+    <set name="height" modifier="2d6">5'0"</set>
+    <set name="weight" modifier="2d6">130 lb.</set>
+  </setters>
+  <rules>
+    <stat name="wisdom" value="2" />
+    <stat name="constitution" value="1" />
+    <stat name="ac:natural" value="1" bonus="enhancement" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_NATURES_WHISPERER" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_REJUVENATION" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EMERALD_ONE_WITH_NATURE" />
+    <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+    <grant type="Spell" id="ID_PHB_SPELL_THORN_WHIP" />
+  </rules>
+</element>
+
+<element name="Nature's Whisperer" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EMERALD_NATURES_WHISPERER">
+  <description>
+    <p>Once per short or long rest you may use your Pouch of Crystal Dust to cast the Speak With Plants spell.</p>
+  </description>
+  <sheet usage="1/Short Rest">
+    <description>You may use your Pouch of Crystal Dust to cast the Speak With Plants spell.</description>
+  </sheet>
+  <rules>
+    <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" />
+  </rules>
+</element>
+
+<element name="Rejuvenation" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EMERALD_REJUVENATION">
+  <description>
+    <p>As an action, you may choose one creature within 30 feet of you and create a magical bond between the two of you. This bond lasts for one minute so long as that creature remains within 30 feet of you and you maintain concentration (as if you were concentrating on a spell). While the bond is active, at the start of your turn you take 1d6 Necrotic damage and the other creature heals twice the amount of damage you take. This Necrotic damage cannot be reduced by any means. You may use this feature a number of times equal to your Proficiency Bonus. You regain expended uses at the end of a Long Rest.</p>
+  </description>
+  <sheet usage="{{proficiency}}/Long Rest" action="Action">
+    <description>You create a magical bond with a creature within 30 feet for 1 minute (concentration). At the start of your turn, you take 1d6 necrotic damage and the bonded creature heals twice that amount.</description>
+  </sheet>
+</element>
+
+<element name="One With Nature" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_EMERALD_ONE_WITH_NATURE">
+  <description>
+    <p>When in a forest, you leave no tracks and can automatically discern true north. Furthermore, you can attempt to hide even when only lightly obscured by natural phenomena.</p>
+  </description>
+  <sheet>
+    <description>In forests, you leave no tracks and automatically know which way is north. You can attempt to hide when only lightly obscured by natural phenomena.</description>
+  </sheet>
+</element>
+
+<!-- Sapphire Gemborn -->
+<element name="Sapphire Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_SAPPHIRE_GEMBORN">
+  <supports>Gemborn</supports>
+  <description>
+    <p>Sapphire Gemborn exhibit grace, telepathic abilities, and an affinity for water. Your blue crystalline body moves with fluid grace, and rippling patterns within your gemstone structure resemble water currents.</p>
+    <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1, and your Charisma score increases by 2.</p>
+    <p class="indent"><strong><em>Natural Armor Enhancement.</em></strong> Increase your Natural armor from 15 to 17.</p>
+    <p class="indent"><strong><em>Ocean's Embrace.</em></strong> You can hold your breath for 30 minutes and you have a swim speed of 30 feet.</p>
+    <p class="indent"><strong><em>Voice of Calm.</em></strong> You may use your Pouch of Crystal Dust to cast the Calm Emotions spell a number of times equal to your Proficiency Bonus. You regain all expended uses at the end of a Long Rest.</p>
+    <p class="indent"><strong><em>Telepathic Communication.</em></strong> You can communicate telepathically with creatures within 30 feet of you.</p>
+    <p class="indent"><strong><em>Flowing Motion.</em></strong> Opportunity Attacks have Disadvantage against you.</p>
+    <p class="indent"><strong><em>Cantrips.</em></strong> You know the Minor Illusion and Shape Water cantrips.</p>
+  </description>
+  <sheet display="false"/>
+  <setters>
+    <set name="height" modifier="2d6">5'0"</set>
+    <set name="weight" modifier="2d6">125 lb.</set>
+  </setters>
+  <rules>
+    <stat name="dexterity" value="1" />
+    <stat name="charisma" value="2" />
+    <stat name="ac:natural" value="2" bonus="enhancement" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_OCEANS_EMBRACE" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_VOICE_OF_CALM" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_TELEPATHIC_COMMUNICATION" />
+    <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SAPPHIRE_FLOWING_MOTION" />
+    <grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+    <grant type="Spell" id="ID_PHB_SPELL_SHAPE_WATER" />
+  </rules>
+</element>
+
+<element name="Ocean's Embrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SAPPHIRE_OCEANS_EMBRACE">
+  <description>
+    <p>You can hold your breath for 30 minutes and you have a swim speed of 30 feet.</p>
+  </description>
+  <sheet>
+    <description>You can hold your breath for 30 minutes and have a swim speed of 30 feet.</description>
+  </sheet>
+  <rules>
+    <stat name="innate speed:swim" value="30" bonus="base" />
+  </rules>
+</element>
+
+<element name="Voice of Calm" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SAPPHIRE_VOICE_OF_CALM">
+  <description>
+    <p>You may use your Pouch of Crystal Dust to cast the Calm Emotions spell a number of times equal to your Proficiency Bonus. You regain all expended uses at the end of a Long Rest.</p>
+  </description>
+  <sheet usage="{{proficiency}}/Long Rest">
+    <description>You may use your Pouch of Crystal Dust to cast the Calm Emotions spell.</description>
+  </sheet>
+  <rules>
+    <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+  </rules>
+</element>
+
+<element name="Telepathic Communication" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SAPPHIRE_TELEPATHIC_COMMUNICATION">
+  <description>
+    <p>You can communicate telepathically with creatures within 30 feet of you.</p>
+  </description>
+  <sheet>
+    <description>You can communicate telepathically with creatures within 30 feet of you.</description>
+  </sheet>
+</element>
+
+<element name="Flowing Motion" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SAPPHIRE_FLOWING_MOTION">
+  <description>
+    <p>Opportunity Attacks have Disadvantage against you.</p>
+  </description>
+  <sheet>
+    <description>Opportunity Attacks have disadvantage against you.</description>
+  </sheet>
+</element>
+
+<!-- Ruby Gemborn -->
+<element name="Ruby Gemborn" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_RUBY_GEMBORN">
+  <supports>Gemborn</supports>
+  <description>
+    <p>Ruby Gemborn are hardy, imposing, and carry the energy of fire within them. Your red crystalline body seems to pulse with an inner heat, and your gemstone structure may have patterns resembling flames.</p>
+    <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1, and your Constitution score increases by 2.</p>
     <p class="indent"><strong><em>Natural Armor Enhancement.</em></strong> Increase your Natural armor from 15 to 17.</p>
     <p class="indent"><strong><em>Burning Heart.</em></strong> You have resistance to fire damage.</p>
     <p class="indent"><strong><em>Ruby Flare.</em></strong> Once per short or long rest you may use your Pouch of Crystal Dust to cast the Burning Hands spell.</p>
@@ -138,4 +531,16 @@
     <description>Roll {{proficiency:half}}d6. You and allies within 30 feet gain temporary hit points equal to the total rolled.</description>
   </sheet>
 </element>
+
+<element name="Crystallian" type="Language" source="Homebrew" id="ID_LANGUAGE_CRYSTALLIAN">
+        <supports>Standard</supports>
+        <description>
+            <p>Crystallian is not a language of words, but of pure tonal resonance. It is a complex system of precisely calibrated frequencies, akin to the harmonious vibrations of countless tuning forks. Gemborn communicate by manipulating the crystalline structures within their bodies, producing a symphony of clear, ringing tones. Each distinct frequency, and the intricate patterns they form, carries meaning, conveying emotions, concepts, and even magical intent without the need for traditional words.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+            <set name="speakers">Gemborn</set>
+            <set name="script">Crystallian</set>
+        </setters>
+    </element>
 </elements>
